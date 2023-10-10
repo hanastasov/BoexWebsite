@@ -1,0 +1,176 @@
+<div class="row-layout page-control">
+  <button igxButton="flat" igxRipple [igxToggleAction]="addStakeholder" class="button">
+    Save Changes
+  </button>
+  <button igxButton="flat" igxRipple class="button">
+    NEW CLIENT
+  </button>
+</div>
+<div class="row-layout form">
+  <div class="column-layout group">
+    <div class="row-layout name">
+      <igx-input-group type="border" [igxToggleAction]="dropdown2" class="input">
+        <input type="text" igxInput />
+        <label igxLabel>Title</label>
+      </igx-input-group>
+      <igx-input-group type="border" class="input_1">
+        <input type="text" igxInput />
+        <label igxLabel>First Name</label>
+      </igx-input-group>
+      <igx-input-group type="border" class="input_2">
+        <input type="text" igxInput />
+        <label igxLabel>Middle Name</label>
+      </igx-input-group>
+      <igx-input-group type="border" class="input_1">
+        <input type="text" igxInput />
+        <label igxLabel>Last Name</label>
+      </igx-input-group>
+      <igx-drop-down #dropdown2 class="dropdown">
+        <igx-drop-down-item [isHeader]="true">
+          Mr.
+        </igx-drop-down-item>
+        <igx-drop-down-item [isHeader]="true">
+          Mrs.
+        </igx-drop-down-item>
+        <igx-drop-down-item [isHeader]="true">
+          Ms.
+        </igx-drop-down-item>
+        <igx-drop-down-item [isHeader]="true">
+          Mx.
+        </igx-drop-down-item>
+        <igx-drop-down-item [isHeader]="true">
+          Dr.
+        </igx-drop-down-item>
+      </igx-drop-down>
+    </div>
+    <igx-input-group type="border" class="company">
+      <input type="text" igxInput />
+      <label igxLabel>Company </label>
+    </igx-input-group>
+    <igx-input-group type="border" class="company">
+      <input type="text" igxInput />
+      <label igxLabel>Display Name As</label>
+    </igx-input-group>
+    <igx-input-group type="border" class="company">
+      <input type="text" igxInput />
+      <label igxLabel>Street</label>
+    </igx-input-group>
+    <div class="row-layout city-province">
+      <igx-input-group type="border" class="city-1">
+        <input type="text" igxInput />
+        <label igxLabel>City</label>
+      </igx-input-group>
+      <igx-input-group type="border" class="city-1">
+        <input type="text" igxInput />
+        <label igxLabel>State/Province</label>
+      </igx-input-group>
+    </div>
+    <div class="row-layout city-province">
+      <igx-input-group type="border" class="city-1">
+        <input type="text" igxInput />
+        <label igxLabel>Postal Code</label>
+      </igx-input-group>
+      <igx-input-group type="border" class="city-1">
+        <input type="text" igxInput />
+        <label igxLabel>Country</label>
+      </igx-input-group>
+    </div>
+    <igx-input-group type="border" class="ig-typography__body-1 textarea">
+      <label igxLabel>Notes</label>
+      <textarea igxInput></textarea>
+    </igx-input-group>
+    <button igxButton="icon" igxRipple class="button_1">
+      <igx-icon>
+        attach_file
+      </igx-icon>
+    </button>
+  </div>
+  <div class="column-layout group">
+    <igx-input-group type="border" class="company">
+      <input type="email" igxInput />
+      <label igxLabel>Email</label>
+    </igx-input-group>
+    <div class="row-layout phone-numbers">
+      <igx-input-group type="border" class="input_3">
+        <input type="tel" igxInput />
+        <label igxLabel>Phone Number</label>
+      </igx-input-group>
+      <igx-input-group type="border" class="input_4">
+        <input type="tel" igxInput />
+        <label igxLabel>Mobile Number</label>
+      </igx-input-group>
+      <igx-input-group type="border" class="input_4">
+        <input type="tel" igxInput />
+        <label igxLabel>Fax Number</label>
+      </igx-input-group>
+    </div>
+    <div class="row-layout phone-numbers">
+      <igx-input-group type="border" class="input_5">
+        <input type="text" igxInput />
+        <label igxLabel>Other</label>
+      </igx-input-group>
+      <igx-input-group type="border" class="input_6">
+        <input type="text" igxInput />
+        <label igxLabel>URL/Website</label>
+      </igx-input-group>
+    </div>
+    <div class="column-layout stakeholder">
+      <div class="column-layout type">
+        <p class="text">
+          Stakeholder Type
+        </p>
+        <igx-checkbox labelPosition="after" class="checkbox">
+          Customer
+        </igx-checkbox>
+        <igx-checkbox labelPosition="after" class="checkbox">
+          Supplier
+        </igx-checkbox>
+        <igx-checkbox labelPosition="after" class="checkbox">
+          Internal
+        </igx-checkbox>
+      </div>
+      <div class="column-layout permission">
+        <p class="text">
+          Stakeholder Permission
+        </p>
+        <igx-checkbox labelPosition="after" class="checkbox">
+          Read
+        </igx-checkbox>
+        <igx-checkbox labelPosition="after" class="checkbox">
+          Write
+        </igx-checkbox>
+        <igx-checkbox labelPosition="after" class="checkbox">
+          Private
+        </igx-checkbox>
+      </div>
+    </div>
+  </div>
+</div>
+<igx-dialog [closeOnOutsideSelect]="true" [closeOnEscape]="true" #addStakeholder>
+  <igx-dialog-title>
+    <h5>
+      Confirmation
+    </h5>
+  </igx-dialog-title>
+  <ng-container>
+    <p>Add Stakeholder</p>
+  </ng-container>
+  <igx-dialog-actions>
+    <button igxButton="flat" igxRipple [igxToggleAction]="addStakeholder">Cancel</button>
+    <button igxButton="flat" igxRipple [igxToggleAction]="addStakeholder">OK</button>
+  </igx-dialog-actions>
+</igx-dialog>
+<igx-dialog [closeOnOutsideSelect]="true" [closeOnEscape]="true" #updateStakeholder>
+  <igx-dialog-title>
+    <h5>
+      Confirmation
+    </h5>
+  </igx-dialog-title>
+  <ng-container>
+    <p>Update Stakeholder</p>
+  </ng-container>
+  <igx-dialog-actions>
+    <button igxButton="flat" igxRipple [igxToggleAction]="updateStakeholder">Cancel</button>
+    <button igxButton="flat" igxRipple [igxToggleAction]="updateStakeholder">OK</button>
+  </igx-dialog-actions>
+</igx-dialog>

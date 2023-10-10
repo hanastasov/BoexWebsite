@@ -1,0 +1,428 @@
+:host {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: stretch;
+  overflow: auto;
+}
+.column-layout {
+  display: flex;
+  flex-direction: column;
+}
+.group {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.terms-1 {
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: stretch;
+  position: relative;
+  min-width: min-content;
+  min-height: min-content;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.row-layout {
+  display: flex;
+}
+.page-control-5 {
+  background-color: hsla(var(--ig-success-500));
+  justify-content: flex-start;
+  align-items: center;
+  align-content: flex-start;
+  position: relative;
+  padding: 10px 3rem;
+  min-width: 50px;
+  min-height: 50px;
+  max-height: 64px;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.group_1 {
+  justify-content: flex-start;
+  align-items: center;
+  align-content: flex-start;
+  position: relative;
+  width: 50%;
+  min-width: 50px;
+  min-height: 50px;
+}
+.group_2 {
+  justify-content: center;
+  align-items: flex-start;
+  align-content: flex-start;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.group_3 {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 1rem;
+  position: relative;
+  padding: 1rem 3rem;
+  min-width: 50px;
+  min-height: min-content;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.issued-location-1 {
+  justify-content: flex-start;
+  align-items: center;
+  align-content: flex-start;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+}
+.group_4 {
+  justify-content: flex-start;
+  align-items: center;
+  align-content: flex-start;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.group_5 {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  position: relative;
+  margin: 0 3rem 0 0;
+  min-width: 50px;
+  min-height: 50px;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.documents-1 {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  min-width: min-content;
+  min-height: min-content;
+  flex-shrink: 0;
+}
+.page-banner {
+  background-color: hsla(var(--ig-success-500));
+  justify-content: flex-start;
+  align-items: center;
+  align-content: flex-start;
+  position: relative;
+  padding: 10px 3rem;
+  width: 100%;
+  min-width: 50px;
+  min-height: 50px;
+  max-height: 64px;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.group_6 {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 1rem;
+  position: relative;
+  padding: 1rem 3rem;
+  min-width: min-content;
+  min-height: min-content;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.group_7 {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  position: relative;
+  height: min-content;
+  min-width: 50%;
+  min-height: 50px;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.group_8 {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  position: relative;
+  min-width: min-content;
+  min-height: 50px;
+}
+.group_9 {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  position: relative;
+  margin: 0 0 1rem;
+  min-width: 50px;
+  min-height: 50px;
+}
+.group_10 {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  position: relative;
+  height: min-content;
+  min-width: min-content;
+  min-height: min-content;
+}
+.group_11 {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+}
+.group_12 {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  position: relative;
+  min-width: 50px;
+  min-height: min-content;
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+.group_13 {
+  justify-content: flex-start;
+  align-items: center;
+  align-content: flex-start;
+  gap: 1rem;
+  position: relative;
+  width: min-content;
+  min-width: 50px;
+  min-height: 50px;
+}
+.notify-party {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  position: relative;
+  min-width: min-content;
+  min-height: min-content;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.page-control-6 {
+  background-color: hsla(var(--ig-success-500));
+  justify-content: space-between;
+  align-items: center;
+  align-content: flex-start;
+  position: relative;
+  padding: 10px 3rem;
+  min-width: 50px;
+  min-height: 50px;
+  max-height: 64px;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.group_14 {
+  justify-content: flex-end;
+  align-items: flex-start;
+  align-content: flex-start;
+  position: relative;
+  margin: 1rem 0 0;
+  min-width: 50px;
+  min-height: min-content;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.group_15 {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 1rem;
+  position: relative;
+  padding: 1rem 3rem 3rem;
+  height: min-content;
+  min-width: min-content;
+  min-height: min-content;
+}
+.group_16 {
+  justify-content: center;
+  align-items: flex-start;
+  align-content: flex-start;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+}
+.group_17 {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 1rem;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.group_18 {
+  justify-content: flex-start;
+  align-items: center;
+  align-content: flex-start;
+  gap: 1rem;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+}
+.group_19 {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 1rem;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+.group_20 {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 1rem;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+}
+.action {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 3rem;
+  position: relative;
+  min-width: min-content;
+  min-height: min-content;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.h5 {
+  height: max-content;
+  min-width: min-content;
+}
+.h5_1 {
+  margin: 0 2rem 0 0;
+  width: 12rem;
+  height: max-content;
+  min-width: 12rem;
+}
+.h5_2 {
+  height: max-content;
+  min-width: min-content;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.hyperlink {
+  color: hsla(var(--ig-info-500));
+  height: max-content;
+  min-width: min-content;
+}
+.text {
+  width: 15rem;
+  height: max-content;
+  min-width: min-content;
+}
+.input {
+  margin: 0 3rem 0 0;
+  height: max-content;
+  min-width: min-content;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.input_1 {
+  height: max-content;
+  min-width: min-content;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.select {
+  width: 7rem;
+  height: max-content;
+  min-width: 5rem;
+  flex-shrink: 0;
+}
+.checkbox {
+  width: max-content;
+  height: max-content;
+}
+.button {
+  margin: 0 0 0 1rem;
+  width: 17.5rem;
+  height: max-content;
+}
+.button_1 {
+  height: max-content;
+}
+.button_2 {
+  margin: 0;
+  width: 18rem;
+  height: max-content;
+}
+.checkbox_1 {
+  margin: 0;
+  width: max-content;
+  height: max-content;
+}
+.select_1 {
+  height: max-content;
+  min-width: min-content;
+  flex-shrink: 0;
+}
+.input_2 {
+  height: max-content;
+  min-width: min-content;
+  max-width: 50%;
+}
+.input_3 {
+  height: max-content;
+  max-width: 50%;
+}
+.user-input {
+  height: max-content;
+  min-width: min-content;
+  max-width: 50%;
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+.input_5 {
+  height: max-content;
+  min-width: min-content;
+  max-width: 50%;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.button_3 {
+  width: 661px;
+  height: max-content;
+  max-width: 50%;
+  flex-shrink: 0;
+}
+.button_4 {
+  height: max-content;
+  max-width: 50%;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.list {
+  width: min-content;
+  height: max-content;
+}
+.snackbar {
+  height: max-content;
+  min-width: min-content;
+}

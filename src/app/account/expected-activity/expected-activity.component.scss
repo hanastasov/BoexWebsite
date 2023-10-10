@@ -1,0 +1,150 @@
+:host {
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+}
+.column-layout {
+  display: flex;
+  flex-direction: column;
+}
+.group {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  position: relative;
+  margin: 0 0 3rem;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.row-layout {
+  display: flex;
+}
+.group_1 {
+  background-color: hsla(var(--ig-secondary-500));
+  justify-content: flex-start;
+  align-items: center;
+  align-content: flex-start;
+  position: relative;
+  padding: 0 0 0 2rem;
+  min-width: min-content;
+  min-height: 50px;
+}
+.group_2 {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 2rem;
+  position: relative;
+  margin: 0 0 3rem;
+  padding: 2rem 4rem;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.card {
+  height: max-content;
+  min-width: min-content;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.group_3 {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 2rem;
+  position: relative;
+  padding: 0 2rem 3rem;
+  min-width: min-content;
+}
+.name {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  position: relative;
+  min-width: min-content;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.group_4 {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 1rem;
+  min-width: min-content;
+  min-height: min-content;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.group_5 {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+}
+.group_6 {
+  justify-content: flex-start;
+  align-items: center;
+  align-content: flex-start;
+  gap: 0.5rem;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+}
+.group_7 {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 1rem;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+}
+.group_8 {
+  justify-content: flex-end;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 1rem;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+}
+.h5 {
+  color: hsla(var(--ig-gray-100));
+  height: max-content;
+  min-width: min-content;
+}
+.h3 {
+  margin: 0 0 -1rem;
+  height: max-content;
+  min-width: min-content;
+}
+.content {
+  margin: 0 0 0.5rem;
+  height: max-content;
+  min-width: min-content;
+}
+.body-content {
+  min-width: 50px;
+  min-height: 50px;
+}
+.input {
+  position: relative;
+  height: max-content;
+  min-width: min-content;
+  align-self: stretch;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.button {
+  height: max-content;
+  flex-shrink: 0;
+}
+.button_1 {
+  --igx-button-foreground: hsla(var(--ig-surface-500));
+  --igx-button-background: hsla(var(--ig-primary-500));
+  height: max-content;
+  flex-shrink: 0;
+}

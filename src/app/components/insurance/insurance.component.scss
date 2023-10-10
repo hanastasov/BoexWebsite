@@ -1,0 +1,76 @@
+:host {
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+}
+.column-layout {
+  display: flex;
+  flex-direction: column;
+}
+.insurance {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  min-width: min-content;
+  min-height: min-content;
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+.row-layout {
+  display: flex;
+}
+.page-banner {
+  background-color: hsla(var(--ig-success-500));
+  justify-content: flex-start;
+  align-items: center;
+  align-content: flex-start;
+  position: relative;
+  padding: 10px 3rem;
+  width: 100%;
+  min-width: 50px;
+  min-height: 50px;
+  max-height: 64px;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.group {
+  justify-content: space-around;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 1rem;
+  position: relative;
+  padding: 1rem 3rem;
+  min-width: min-content;
+  min-height: min-content;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.card {
+  width: 320px;
+  height: max-content;
+  min-width: 320px;
+  flex-shrink: 0;
+}
+.h5 {
+  height: max-content;
+  min-width: min-content;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.image {
+  height: 100%;
+}
+.body-content {
+  min-width: 50px;
+  min-height: 50px;
+}
+.actions-content {
+  min-width: 50px;
+  min-height: 40px;
+}
+.checkbox {
+  width: max-content;
+  height: max-content;
+}

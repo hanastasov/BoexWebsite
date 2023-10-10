@@ -1,0 +1,307 @@
+<div class="column-layout group">
+  <div class="column-layout terms-1">
+    <div class="row-layout page-control-5">
+      <div class="row-layout group_1">
+        <div class="column-layout group_2">
+          <h5 class="h5">
+            Terms
+          </h5>
+        </div>
+      </div>
+    </div>
+    <div class="column-layout group_3">
+      <div class="row-layout issued-location-1">
+        <div class="row-layout group_4">
+          <h5 class="h5_1">
+            Issued Location:
+          </h5>
+          <igx-input-group type="border" class="input">
+            <input type="text" igxInput />
+          </igx-input-group>
+        </div>
+      </div>
+      <div class="row-layout issued-location-1">
+        <div class="row-layout group_4">
+          <h5 class="h5_1">
+            Presentation Date
+          </h5>
+          <igx-input-group type="border" class="input">
+            <input type="text" igxInput />
+          </igx-input-group>
+        </div>
+      </div>
+      <div class="row-layout issued-location-1">
+        <div class="row-layout group_4">
+          <h5 class="h5_1">
+            Date of Issue
+          </h5>
+          <igx-input-group type="border" class="input">
+            <input type="text" igxInput />
+          </igx-input-group>
+        </div>
+      </div>
+      <div class="row-layout issued-location-1">
+        <div class="row-layout group_4">
+          <h5 class="h5_1">
+            Terms
+          </h5>
+          <igx-input-group type="border" class="input">
+            <input type="text" igxInput />
+          </igx-input-group>
+        </div>
+      </div>
+      <div class="row-layout issued-location-1">
+        <div class="row-layout group_4">
+          <h5 class="h5_1">
+            Ammount
+          </h5>
+          <div class="row-layout group_5">
+            <igx-input-group type="border" class="input_1">
+              <input type="number" igxInput />
+            </igx-input-group>
+            <igx-select type="border" class="select">
+              <igx-select-item value="Option">
+                Option
+              </igx-select-item>
+              <label igxLabel>Label/Placeholder</label>
+            </igx-select>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="column-layout documents-1">
+    <div class="row-layout page-banner">
+      <h5 class="h5_2">
+        Attatched Document(s)
+      </h5>
+    </div>
+    <div class="row-layout group_6">
+      <div class="column-layout group_7">
+        <div class="column-layout group_8">
+          <div class="column-layout group_9">
+            <a target="_blank" class="ig-typography__body-1 hyperlink">
+              dfwgwergwergwergwergwergwergwerg
+            </a>
+            <a target="_blank" class="ig-typography__body-1 hyperlink">
+              This is a link
+            </a>
+            <a target="_blank" class="ig-typography__body-1 hyperlink">
+              This is a link
+            </a>
+            <a target="_blank" class="ig-typography__body-1 hyperlink">
+              This is a link
+            </a>
+            <a target="_blank" class="ig-typography__body-1 hyperlink">
+              This is a link
+            </a>
+          </div>
+        </div>
+        <div class="column-layout group_10">
+          <div *ngIf="groupVisible16" class="column-layout group_11">
+            <div class="row-layout group_12">
+              <h5 class="h5">
+                New Files
+              </h5>
+            </div>
+            <igx-list class="list">
+              <igx-list-item [isHeader]="false">
+                <span igxListLine>
+                  <div class="row-layout group_13">
+                    <p class="text">
+                      File
+                    </p>
+                    <igx-checkbox class="checkbox"></igx-checkbox>
+                  </div>
+                </span>
+              </igx-list-item>
+              <igx-list-item [isHeader]="false">
+                <span igxListLine>
+                  <div class="row-layout group_13">
+                    <p class="text">
+                      File
+                    </p>
+                    <igx-checkbox class="checkbox"></igx-checkbox>
+                  </div>
+                </span>
+              </igx-list-item>
+              <igx-list-item [isHeader]="false">
+                <span igxListLine>
+                  <div class="row-layout group_13">
+                    <p class="text">
+                      File
+                    </p>
+                    <igx-checkbox class="checkbox"></igx-checkbox>
+                  </div>
+                </span>
+              </igx-list-item>
+              <igx-list-item [isHeader]="false">
+                <span igxListLine>
+                  <div class="row-layout group_13">
+                    <p class="text">
+                      File
+                    </p>
+                    <igx-checkbox class="checkbox"></igx-checkbox>
+                  </div>
+                </span>
+              </igx-list-item>
+            </igx-list>
+            <button igxButton="raised" igxRipple class="button">
+              Remove Selected Files
+            </button>
+          </div>
+          <button igxButton="raised" igxRipple *ngIf="buttonVisible2" class="button_1">
+            Add Files
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="column-layout notify-party">
+    <div class="row-layout page-control-6">
+      <div class="column-layout group_2">
+        <h5 class="h5">
+          Notify Party
+        </h5>
+      </div>
+      <div class="column-layout group_2">
+        <h5 class="h5">
+          Enhancers
+        </h5>
+      </div>
+    </div>
+    <div class="row-layout group_6">
+      <div class="column-layout group">
+        <a target="_blank" class="ig-typography__body-1 hyperlink">
+          This is a link
+        </a>
+        <a target="_blank" class="ig-typography__body-1 hyperlink">
+          This is a link
+        </a>
+        <igx-snackbar actionText="Action" (ActionButtonClick)="snackbar2.toggle()" #snackbar2 class="snackbar">
+          This is a message
+        </igx-snackbar>
+        <a target="_blank" class="ig-typography__body-1 hyperlink">
+          This is a link
+        </a>
+        <a target="_blank" class="ig-typography__body-1 hyperlink">
+          This is a link
+        </a>
+        <a target="_blank" class="ig-typography__body-1 hyperlink">
+          This is a link
+        </a>
+        <div class="column-layout group_14">
+          <button igxButton="raised" igxRipple class="button_2">
+            Add Party
+          </button>
+        </div>
+      </div>
+      <div class="column-layout group">
+        <a target="_blank" class="ig-typography__body-1 hyperlink">
+          This is a link
+        </a>
+        <a target="_blank" class="ig-typography__body-1 hyperlink">
+          This is a link
+        </a>
+        <a target="_blank" class="ig-typography__body-1 hyperlink">
+          This is a link
+        </a>
+        <a target="_blank" class="ig-typography__body-1 hyperlink">
+          This is a link
+        </a>
+        <a target="_blank" class="ig-typography__body-1 hyperlink">
+          This is a link
+        </a>
+        <div class="column-layout group_14">
+          <button igxButton="raised" igxRipple class="button_2">
+            Add Enhancer
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="column-layout notify-party">
+    <div class="row-layout page-control-5">
+      <h5 class="h5">
+        Bank Information
+      </h5>
+    </div>
+    <div class="column-layout group_15">
+      <div class="row-layout group_16">
+        <div class="column-layout group_17">
+          <div class="row-layout group_18">
+            <igx-checkbox labelPosition="after" class="checkbox_1">
+              Use information on file
+            </igx-checkbox>
+            <igx-select type="border" class="select_1">
+              <igx-select-item value="Option">
+                Option
+              </igx-select-item>
+              <label igxLabel>Bank Account</label>
+            </igx-select>
+          </div>
+          <igx-input-group type="border" class="input_2">
+            <input type="text" igxInput />
+            <label igxLabel>Bank Name</label>
+          </igx-input-group>
+          <igx-input-group type="border" class="input_3">
+            <input type="text" igxInput />
+            <label igxLabel>Bank Address</label>
+          </igx-input-group>
+          <div class="row-layout group_19">
+            <igx-input-group type="border" class="user-input">
+              <input type="text" igxInput />
+              <label igxLabel>Bank City</label>
+            </igx-input-group>
+            <igx-input-group type="border" class="input_5">
+              <input type="text" igxInput />
+              <label igxLabel>Bank State</label>
+            </igx-input-group>
+          </div>
+          <div class="row-layout group_20">
+            <igx-select type="border" class="user-input">
+              <igx-select-item value="Option">
+                Option
+              </igx-select-item>
+              <label igxLabel>Bank Country</label>
+            </igx-select>
+            <igx-input-group type="border" class="input_5">
+              <input type="text" igxInput />
+              <label igxLabel>Bank Postal Code</label>
+            </igx-input-group>
+          </div>
+          <igx-input-group type="border" class="input_2">
+            <input type="text" igxInput />
+            <label igxLabel>Bank Phone</label>
+          </igx-input-group>
+          <igx-input-group type="border" class="input_2">
+            <input type="text" igxInput />
+            <label igxLabel>Bank IBAN</label>
+          </igx-input-group>
+          <igx-input-group type="border" class="input_2">
+            <input type="text" igxInput />
+            <label igxLabel>Bank Swift</label>
+          </igx-input-group>
+          <div class="row-layout group_20">
+            <igx-input-group type="border" class="user-input">
+              <input type="text" igxInput />
+              <label igxLabel>Bank Routing</label>
+            </igx-input-group>
+            <igx-input-group type="border" class="input_5">
+              <input type="text" igxInput />
+              <label igxLabel>Bank Account</label>
+            </igx-input-group>
+          </div>
+        </div>
+      </div>
+      <div class="row-layout action">
+        <button igxButton="outlined" igxRipple class="button_3">
+          Back
+        </button>
+        <button igxButton="raised" igxRipple class="button_4">
+          Submit new terms
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

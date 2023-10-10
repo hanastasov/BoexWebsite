@@ -1,0 +1,39 @@
+<div class="row-layout page-control">
+  <button igxButton="raised" igxRipple class="button">
+    Save Changes
+  </button>
+  <button igxButton="flat" igxRipple [igxToggleAction]="dialog11" class="button_1">
+    Archive
+  </button>
+</div>
+<div class="row-layout group">
+  <div class="row-layout transaction-list">
+    <igx-grid [data]="northwindCustomers" primaryKey="customerID" displayDensity="cosy" cellSelection="single" [allowFiltering]="true" filterMode="quickFilter" height="400px" class="grid">
+      <igx-column field="customerID" dataType="string" header="customerID" [sortable]="true" [hasSummary]="true" [selectable]="false"></igx-column>
+      <igx-paginator [perPage]="10"></igx-paginator>
+      <igx-column field="companyName" dataType="string" header="companyName" [sortable]="true" [hasSummary]="true" [selectable]="false"></igx-column>
+      <igx-column field="contactName" dataType="string" header="contactName" [sortable]="true" [hasSummary]="true" [selectable]="false"></igx-column>
+      <igx-column field="contactTitle" dataType="string" header="contactTitle" [sortable]="true" [hasSummary]="true" [selectable]="false"></igx-column>
+      <igx-column field="address.street" dataType="string" header="address street" [sortable]="true" [hasSummary]="true" [selectable]="false"></igx-column>
+      <igx-column field="address.city" dataType="string" header="address city" [sortable]="true" [hasSummary]="true" [selectable]="false"></igx-column>
+      <igx-column field="address.region" dataType="string" header="address region" [sortable]="true" [hasSummary]="true" [selectable]="false"></igx-column>
+      <igx-column field="address.postalCode" dataType="string" header="address postalCode" [sortable]="true" [hasSummary]="true" [selectable]="false"></igx-column>
+      <igx-column field="address.country" dataType="string" header="address country" [sortable]="true" [hasSummary]="true" [selectable]="false"></igx-column>
+      <igx-column field="address.phone" dataType="string" header="address phone" [sortable]="true" [hasSummary]="true" [selectable]="false"></igx-column>
+    </igx-grid>
+  </div>
+</div>
+<igx-dialog [closeOnOutsideSelect]="true" [closeOnEscape]="true" #dialog11>
+  <igx-dialog-title>
+    <h5>
+      Confirmation
+    </h5>
+  </igx-dialog-title>
+  <ng-container>
+    <p>Archive client</p>
+  </ng-container>
+  <igx-dialog-actions>
+    <button igxButton="flat" igxRipple [igxToggleAction]="dialog11">Cancel</button>
+    <button igxButton="flat" igxRipple [igxToggleAction]="dialog11">OK</button>
+  </igx-dialog-actions>
+</igx-dialog>

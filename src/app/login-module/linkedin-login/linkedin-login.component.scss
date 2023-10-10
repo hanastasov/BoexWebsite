@@ -1,0 +1,41 @@
+:host {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: flex-start;
+}
+.column-layout {
+  display: flex;
+  flex-direction: column;
+}
+.group {
+  justify-content: center;
+  align-items: center;
+  align-content: flex-start;
+  gap: 20px;
+  padding: 60px;
+  min-width: 50px;
+  min-height: 50px;
+  flex-shrink: 0;
+}
+.boex-image {
+  object-fit: contain;
+  margin: 10px;
+  width: 177px;
+  height: 192px;
+  min-width: 0;
+  min-height: 0;
+}
+.image {
+  object-fit: none;
+  width: 115px;
+  height: 152px;
+  min-width: 0;
+  min-height: 0;
+}
+.h4 {
+  color: hsla(var(--ig-secondary-700));
+  height: max-content;
+  min-width: min-content;
+}

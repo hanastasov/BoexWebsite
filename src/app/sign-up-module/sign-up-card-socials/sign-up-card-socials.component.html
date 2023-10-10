@@ -1,0 +1,31 @@
+<div class="column-layout main">
+  <igx-card type="outlined" class="card">
+    <igx-card-header>
+      <h3 igxCardHeaderTitle>
+        Welcome to Boex
+      </h3>
+      <h5 igxCardHeaderSubtitle>
+        Signup
+      </h5>
+    </igx-card-header>
+    <igx-card-content class="body-content">
+      <div class="column-layout address">
+        <div class="column-layout blockchain">
+          <igx-input-group type="border" class="input">
+            <input type="text" [disabled]="true" igxInput />
+            <label igxLabel>Blockchain Address</label>
+          </igx-input-group>
+          <div class="column-layout group">
+            <button igxButton="raised" igxRipple class="button">
+              Connect Metamask
+            </button>
+          </div>
+        </div>
+      </div>
+    </igx-card-content>
+    <igx-card-actions class="actions-content">
+      <ng-container igxStart></ng-container>
+      <ng-container igxEnd></ng-container>
+    </igx-card-actions>
+  </igx-card>
+</div>

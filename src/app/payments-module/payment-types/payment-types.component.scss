@@ -1,0 +1,115 @@
+:host {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+}
+.row-layout {
+  display: flex;
+}
+.page-control {
+  background-color: hsla(var(--ig-secondary-100));
+  justify-content: space-between;
+  align-items: center;
+  align-content: flex-start;
+  padding: 10px 60px;
+  height: 64px;
+  min-width: 50px;
+  min-height: 50px;
+  max-height: 64px;
+  flex-shrink: 0;
+}
+.column-layout {
+  display: flex;
+  flex-direction: column;
+}
+.subtitle {
+  background-color: hsla(var(--ig-gray-100));
+  justify-content: center;
+  align-items: stretch;
+  align-content: flex-start;
+  min-width: 50px;
+  min-height: 50px;
+}
+.group {
+  background-color: hsla(var(--ig-gray-100));
+  justify-content: center;
+  align-items: stretch;
+  align-content: flex-start;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+}
+.main {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  position: relative;
+  padding: 40px 0 0 60px;
+  height: 321px;
+  min-width: 50px;
+  min-height: 50px;
+}
+.buttons {
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
+  position: relative;
+  margin: 0 3px 0 0;
+  width: 95px;
+  min-width: 50px;
+  min-height: 50px;
+  flex-shrink: 0;
+}
+.group_1 {
+  justify-content: center;
+  align-items: flex-start;
+  align-content: flex-start;
+  position: relative;
+  margin: 0 0 5px;
+  height: 48px;
+  min-width: 50px;
+  min-height: 48px;
+}
+.text {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  position: relative;
+  width: 147px;
+  min-width: 50px;
+  min-height: 50px;
+}
+.group_2 {
+  justify-content: center;
+  align-items: flex-start;
+  align-content: flex-start;
+  position: relative;
+  margin: 0 0 5px;
+  min-width: 50px;
+  min-height: 48px;
+}
+.button {
+  --igx-button-foreground: hsla(var(--ig-surface-500));
+  --igx-button-background: hsla(var(--ig-secondary-500));
+  height: max-content;
+  flex-shrink: 0;
+}
+.button_1 {
+  --igx-button-background: hsla(var(--ig-secondary-500));
+  height: max-content;
+}
+.h5 {
+  color: hsla(var(--ig-primary-700));
+  margin: 0 0 0 155px;
+  width: 199px;
+  height: max-content;
+  min-width: min-content;
+}
+.text_1 {
+  color: hsla(var(--ig-primary-700));
+  height: max-content;
+  min-width: min-content;
+}

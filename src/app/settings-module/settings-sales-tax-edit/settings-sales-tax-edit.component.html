@@ -1,0 +1,138 @@
+<div class="row-layout page-control">
+  <button igxButton="flat" igxRipple [igxToggleAction]="dialog10" class="button">
+    Save Changes
+  </button>
+  <button igxButton="raised" igxRipple routerLink="/stakeholders-module/stakeholder-new" class="button_1">
+    New Tax
+  </button>
+</div>
+<div class="row-layout main">
+  <div class="column-layout group">
+    <div class="row-layout group_1">
+      <div class="column-layout titles">
+        <h5 class="h5">
+          Tax Name
+        </h5>
+      </div>
+      <igx-input-group type="border" class="input">
+        <input type="text" igxInput />
+        <label igxLabel> </label>
+      </igx-input-group>
+    </div>
+    <div class="row-layout group_1">
+      <div class="column-layout titles">
+        <h5 class="h5">
+          Tax Rate
+        </h5>
+      </div>
+      <igx-input-group type="border" class="input">
+        <input type="text" igxInput />
+        <label igxLabel> </label>
+      </igx-input-group>
+    </div>
+  </div>
+  <div class="column-layout group-2">
+    <div class="column-layout group_2">
+      <div class="column-layout group_3">
+        <h5 class="content">
+          Add Sales Tax Rate
+        </h5>
+      </div>
+      <div class="row-layout group_4">
+        <h5 class="h5_2">
+          Class
+        </h5>
+        <igx-select type="border" placeholder="NONE" [(ngModel)]="value" class="select">
+          <igx-select-item value="None">
+            None
+          </igx-select-item>
+          <label igxLabel>Class</label>
+        </igx-select>
+      </div>
+      <div class="row-layout group_4">
+        <h5 class="h5_2">
+          Rate
+        </h5>
+        <igx-input-group type="border" class="input">
+          <input type="text" igxInput />
+          <label igxLabel>Rate</label>
+        </igx-input-group>
+      </div>
+    </div>
+    <button igxButton="raised" igxRipple class="button_2">
+      ADD NEW RATE
+    </button>
+    <div class="column-layout group_5">
+      <div class="column-layout group_6">
+        <div class="row-layout group_7">
+          <div class="row-layout group_8">
+            <div class="row-layout group_9">
+              <igx-icon class="icon">
+                delete
+              </igx-icon>
+              <div class="row-layout group_10">
+                <h5 class="content">
+                  Sales Tax Rates
+                </h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row-layout group_11">
+          <div class="row-layout group_12">
+            <div class="row-layout group_8">
+              <div class="row-layout group_9">
+                <igx-icon class="icon_1">
+                  delete
+                </igx-icon>
+                <div class="row-layout group_10">
+                  <p class="text">
+                    5%
+                  </p>
+                </div>
+              </div>
+              <div class="column-layout group_13">
+                <p class="content">
+                  None
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row-layout group_7">
+          <div class="row-layout group_8">
+            <div class="row-layout group_9">
+              <igx-icon class="icon">
+                delete
+              </igx-icon>
+              <div class="row-layout group_10">
+                <p class="content">
+                  Rate
+                </p>
+              </div>
+            </div>
+            <div class="column-layout group_13">
+              <p class="content">
+                Class
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<igx-dialog [closeOnOutsideSelect]="true" [closeOnEscape]="true" #dialog10>
+  <igx-dialog-title>
+    <h5>
+      Confirmation
+    </h5>
+  </igx-dialog-title>
+  <ng-container>
+    <p>Change Tax Rate</p>
+  </ng-container>
+  <igx-dialog-actions>
+    <button igxButton="flat" igxRipple routerLink="/settings-module/settings-sales-tax">Cancel</button>
+    <button igxButton="flat" igxRipple [igxToggleAction]="dialog10">OK</button>
+  </igx-dialog-actions>
+</igx-dialog>

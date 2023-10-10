@@ -1,0 +1,139 @@
+<div class="row-layout page-control">
+  <button igxButton="flat" igxRipple [igxToggleAction]="newRoleDialogWindow" class="button">
+    Save Changes
+  </button>
+  <button igxButton="flat" igxRipple routerLink="/stakeholders-module/stakeholder-new" class="button">
+    Archive
+  </button>
+</div>
+<div class="column-layout group">
+  <div class="column-layout name">
+    <div class="row-layout group_1">
+      <h5 class="h5">
+        Name
+      </h5>
+    </div>
+    <div class="row-layout group_2">
+      <p class="text">
+        Name of Role
+      </p>
+      <igx-input-group type="border" class="input">
+        <input type="text" igxInput />
+      </igx-input-group>
+    </div>
+  </div>
+  <div class="column-layout general">
+    <div class="row-layout group_3">
+      <igx-checkbox labelPosition="after" [checked]="true" class="checkbox">
+        General - All
+      </igx-checkbox>
+    </div>
+    <div class="column-layout group_4">
+      <igx-checkbox labelPosition="after" [checked]="true" class="checkbox_1">
+        External Login
+      </igx-checkbox>
+      <igx-checkbox labelPosition="after" [checked]="true" class="checkbox_2">
+        Reports
+      </igx-checkbox>
+    </div>
+  </div>
+  <div class="row-layout all">
+    <igx-checkbox labelPosition="after" [checked]="true" class="checkbox_3">
+      All Permissions
+    </igx-checkbox>
+  </div>
+  <div class="column-layout general">
+    <div class="row-layout group_3">
+      <igx-checkbox labelPosition="after" [checked]="true" class="checkbox">
+        Transactions - All
+      </igx-checkbox>
+    </div>
+    <div class="column-layout group_4">
+      <igx-checkbox labelPosition="after" [checked]="true" class="checkbox_1">
+        Transactions
+      </igx-checkbox>
+      <igx-checkbox labelPosition="after" [checked]="true" class="checkbox_2">
+        Transactions - Create
+      </igx-checkbox>
+      <igx-checkbox labelPosition="after" [checked]="true" class="checkbox_2">
+        Transactions - Sign
+      </igx-checkbox>
+    </div>
+  </div>
+  <div class="column-layout general">
+    <div class="row-layout group_3">
+      <igx-checkbox labelPosition="after" [checked]="true" class="checkbox">
+        Clients - All
+      </igx-checkbox>
+    </div>
+    <div class="column-layout group_4">
+      <igx-checkbox labelPosition="after" [checked]="true" class="checkbox_1">
+        Clients - Basic
+      </igx-checkbox>
+      <igx-checkbox labelPosition="after" [checked]="true" class="checkbox_2">
+        Clients - Export
+      </igx-checkbox>
+      <igx-checkbox labelPosition="after" [checked]="true" class="checkbox_2">
+        Clients - Delete
+      </igx-checkbox>
+    </div>
+  </div>
+  <div class="column-layout general">
+    <div class="row-layout group_3">
+      <igx-checkbox labelPosition="after" [checked]="true" class="checkbox">
+        Payments - All
+      </igx-checkbox>
+    </div>
+    <div class="column-layout group_5">
+      <igx-checkbox labelPosition="after" [checked]="true" class="checkbox_1">
+        Payments - Reports
+      </igx-checkbox>
+    </div>
+  </div>
+  <div class="column-layout general">
+    <div class="row-layout group_3">
+      <igx-checkbox labelPosition="after" [checked]="true" class="checkbox">
+        Settings - All
+      </igx-checkbox>
+    </div>
+    <div class="column-layout group_6">
+      <igx-checkbox labelPosition="after" [checked]="true" class="checkbox_1">
+        Settings - Basic
+      </igx-checkbox>
+      <igx-checkbox labelPosition="after" [checked]="true" class="checkbox_2">
+        Settings - Export
+      </igx-checkbox>
+      <igx-checkbox labelPosition="after" [checked]="true" class="checkbox_2">
+        Settings - Delete
+      </igx-checkbox>
+    </div>
+  </div>
+</div>
+<igx-dialog [closeOnOutsideSelect]="true" [closeOnEscape]="true" #newRoleDialogWindow>
+  <igx-dialog-title>
+    <h5>
+      Confirmation
+    </h5>
+  </igx-dialog-title>
+  <ng-container>
+    <p>Create New Role</p>
+  </ng-container>
+  <igx-dialog-actions>
+    <button igxButton="flat" igxRipple [igxToggleAction]="newRoleDialogWindow">Cancel</button>
+    <button igxButton="flat" igxRipple routerLink="/employee-module/employee-roles">OK</button>
+  </igx-dialog-actions>
+</igx-dialog>
+<igx-dialog [closeOnOutsideSelect]="true" [closeOnEscape]="true" #updateRoleDialogWindow>
+  <igx-dialog-title>
+    <h5>
+      Confirmation
+    </h5>
+  </igx-dialog-title>
+  <ng-container>
+    <p>Update Role</p>
+  </ng-container>
+  <igx-dialog-actions>
+    <button igxButton="flat" igxRipple routerLink="/employee-module/employee-roles">Cancel</button>
+    <button igxButton="flat" igxRipple [igxToggleAction]="updateRoleDialogWindow">OK</button>
+  </igx-dialog-actions>
+</igx-dialog>

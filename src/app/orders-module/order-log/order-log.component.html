@@ -1,0 +1,38 @@
+<div class="row-layout page-control">
+  <button igxButton="flat" igxRipple routerLink="/orders-module/order-customers" class="button">
+    SAVE
+  </button>
+</div>
+<div class="row-layout group">
+  <igx-nav-drawer [isOpen]="true" [pin]="true" [pinThreshold]="1024" width="160px" class="nav-drawer">
+    <ng-template igxDrawer>
+      <div [isHeader]="true" igxDrawerItem igxRipple routerLink="/orders-module/order-details" class="nav-drawer-item">
+        <span>DETAILS</span>
+      </div>
+      <div [isHeader]="true" igxDrawerItem igxRipple routerLink="/orders-module/order-payments">
+        <span>PAYMENTS</span>
+      </div>
+      <div [isHeader]="true" igxDrawerItem igxRipple routerLink="/orders-module/order-negotiations">
+        <span>NEGOTIATIONS</span>
+      </div>
+      <div [isHeader]="true" igxDrawerItem igxRipple routerLink="/orders-module/orders-email">
+        <span>EMAIL</span>
+      </div>
+      <div [isHeader]="true" igxDrawerItem igxRipple routerLink="/orders-module/order-log">
+        <span>BOEX LOG</span>
+      </div>
+    </ng-template>
+  </igx-nav-drawer>
+  <igx-grid [data]="northwindCategories" primaryKey="categoryID" displayDensity="cosy" [allowFiltering]="true" filterMode="excelStyleFilter" width="1220px" height="832px" class="grid">
+    <igx-grid-toolbar>
+      <igx-grid-toolbar-actions>
+        <igx-grid-toolbar-advanced-filtering></igx-grid-toolbar-advanced-filtering>
+      </igx-grid-toolbar-actions>
+      <igx-grid-toolbar-title>Grid Toolbar</igx-grid-toolbar-title>
+    </igx-grid-toolbar>
+    <igx-column field="categoryID" dataType="number" header="categoryID" [hasSummary]="true" [selectable]="false"></igx-column>
+    <igx-paginator [perPage]="10"></igx-paginator>
+    <igx-column field="description" dataType="string" header="description" [hasSummary]="true" [selectable]="false"></igx-column>
+    <igx-column field="name" dataType="string" header="name" [hasSummary]="true" [selectable]="false"></igx-column>
+  </igx-grid>
+</div>

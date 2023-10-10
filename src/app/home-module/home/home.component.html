@@ -1,0 +1,73 @@
+<div class="column-layout parent-layout">
+  <div class="row-layout group">
+    <div class="column-layout welcome">
+      <h5 class="content">
+        Welcome Back &#123;name&#125;
+      </h5>
+      <p class="text">
+        Here's what is happening with your business today
+      </p>
+      <igx-select type="border" class="select">
+        <igx-select-item value="Option">
+          Option
+        </igx-select-item>
+        <label igxLabel>Business</label>
+      </igx-select>
+      <button igxButton="raised" igxRipple class="button">
+        New Bill of Exchange
+      </button>
+    </div>
+    <div class="column-layout cards-1"></div>
+  </div>
+  <div class="row-layout chart-and-cards">
+    <div class="column-layout group_1"></div>
+    <div class="column-layout cards">
+      <igx-card class="card">
+        <igx-card-header>
+          <h3 igxCardHeaderTitle>
+            Alerts
+          </h3>
+          <h5 igxCardHeaderSubtitle>
+            Notify Party Alerts
+          </h5>
+        </igx-card-header>
+        <igx-card-content class="body-content">
+          <p class="content">
+            Any sort of alerts will go here from third parties, eg IOT devices, also any discussion that has not caused a material change in a contract.
+
+          </p>
+        </igx-card-content>
+      </igx-card>
+      <igx-card class="card">
+        <igx-card-header>
+          <h3 igxCardHeaderTitle>
+            Active Orders
+          </h3>
+          <h5 igxCardHeaderSubtitle>
+            In Negotiation, not yet shipped
+          </h5>
+        </igx-card-header>
+        <igx-card-content class="body-content">
+          <p class="content">
+            Placeholder for orders that are currently in contract negotiation but not yet shippped.
+          </p>
+        </igx-card-content>
+      </igx-card>
+      <igx-card class="card_1">
+        <igx-card-header>
+          <h3 igxCardHeaderTitle>
+            Change Orders
+          </h3>
+          <h5 igxCardHeaderSubtitle>
+            Previously agreed, change in material terms.
+          </h5>
+        </igx-card-header>
+        <igx-card-content class="body-content">
+          <p class="content">
+            Placeholder for orders previously agreed to, but a change in material terms has occured.
+          </p>
+        </igx-card-content>
+      </igx-card>
+    </div>
+  </div>
+</div>

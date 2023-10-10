@@ -1,0 +1,194 @@
+:host {
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  overflow: auto;
+}
+.column-layout {
+  display: flex;
+  flex-direction: column;
+}
+.group {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  overflow: auto;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.row-layout {
+  display: flex;
+}
+.group_1 {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+}
+.group_2 {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: stretch;
+  gap: 1rem;
+  position: relative;
+  padding: 2rem;
+  min-width: min-content;
+  min-height: min-content;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.name {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  position: relative;
+  min-width: min-content;
+  min-height: min-content;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.group_3 {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 1rem;
+  position: relative;
+  min-width: min-content;
+  min-height: min-content;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.address {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  position: relative;
+  margin: 0;
+  min-width: min-content;
+  min-height: min-content;
+  flex-shrink: 0;
+}
+.group_4 {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 1rem;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+}
+.group_5 {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 1rem;
+  position: relative;
+  margin: 0 0 1rem;
+  min-width: min-content;
+  min-height: min-content;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.group_6 {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 1rem;
+  position: relative;
+  margin: 0;
+  padding: 2rem;
+  min-width: min-content;
+  min-height: min-content;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.cic {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  position: relative;
+  margin: 0;
+  min-width: min-content;
+  min-height: min-content;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.notify {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 0.5rem;
+  position: relative;
+  margin: 0;
+  min-width: min-content;
+  min-height: min-content;
+  max-height: min-content;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.report {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 0.5rem;
+  position: relative;
+  margin: 0;
+  min-width: min-content;
+  min-height: min-content;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.group_7 {
+  justify-content: center;
+  align-items: stretch;
+  align-content: flex-start;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+}
+.h5 {
+  margin: 0 0 0.5rem;
+  height: max-content;
+  min-width: min-content;
+}
+.h5_1 {
+  margin: 0;
+  height: max-content;
+  min-width: min-content;
+}
+.input {
+  height: max-content;
+  min-width: min-content;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.input_1 {
+  height: max-content;
+  min-width: min-content;
+}
+.input_2 {
+  height: max-content;
+  min-width: min-content;
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+.user-input {
+  width: max-content;
+  height: max-content;
+}
+.radio {
+  padding: 8px;
+}
+.button {
+  margin: 0;
+  width: 60%;
+  height: max-content;
+  flex-shrink: 0;
+}

@@ -1,0 +1,188 @@
+:host {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+}
+.row-layout {
+  display: flex;
+}
+.page-control {
+  background-color: hsla(var(--ig-secondary-100));
+  justify-content: space-between;
+  align-items: center;
+  align-content: flex-start;
+  position: relative;
+  padding: 10px 30px;
+  height: 64px;
+  min-width: 50px;
+  min-height: 50px;
+  max-height: 64px;
+  flex-shrink: 0;
+}
+.form {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+  flex-shrink: 0;
+}
+.column-layout {
+  display: flex;
+  flex-direction: column;
+}
+.group {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  position: relative;
+  padding: 30px 20px 20px;
+  min-width: 50px;
+  min-height: 50px;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.name {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  position: relative;
+  margin: 0 0 30px;
+  width: 100%;
+  min-width: 50px;
+  min-height: 50px;
+  flex-shrink: 0;
+}
+.city-province {
+  justify-content: space-between;
+  align-items: stretch;
+  align-content: flex-start;
+  position: relative;
+  margin: 0 0 30px;
+  min-width: 50px;
+  min-height: 50px;
+  flex-shrink: 0;
+}
+.phone-numbers {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  position: relative;
+  margin: 0 0 30px;
+  min-width: 50px;
+  min-height: 50px;
+}
+.stakeholder {
+  background-color: hsla(var(--ig-gray-200));
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  position: relative;
+  margin: 0 0 30px;
+  padding: 20px;
+  min-width: 50px;
+  min-height: 50px;
+}
+.type {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  position: relative;
+  margin: 0 0 20px;
+  min-width: 50px;
+  min-height: 50px;
+}
+.permission {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+}
+.button {
+  height: max-content;
+  flex-shrink: 0;
+}
+.input {
+  width: 9%;
+  height: max-content;
+  min-width: min-content;
+  flex-shrink: 0;
+}
+.input_1 {
+  width: 31%;
+  height: max-content;
+  min-width: min-content;
+  flex-shrink: 0;
+}
+.input_2 {
+  width: 29%;
+  height: max-content;
+  min-width: min-content;
+  flex-shrink: 0;
+}
+.dropdown {
+  left: 0;
+  top: 0;
+  position: absolute;
+  height: max-content;
+  min-width: min-content;
+}
+.company {
+  margin: 0 0 30px;
+  height: max-content;
+  min-width: min-content;
+}
+.city-1 {
+  width: 50%;
+  height: max-content;
+  min-width: min-content;
+  flex-shrink: 0;
+}
+.button_1 {
+  --igx-button-foreground: hsla(var(--ig-surface-500));
+  --igx-button-background: hsla(var(--ig-primary-800));
+}
+.input_3 {
+  width: 34%;
+  height: max-content;
+  min-width: min-content;
+  flex-shrink: 0;
+}
+.input_4 {
+  width: 33%;
+  height: max-content;
+  min-width: min-content;
+  flex-shrink: 0;
+}
+.input_5 {
+  width: 20%;
+  height: max-content;
+  min-width: min-content;
+  flex-shrink: 0;
+}
+.input_6 {
+  width: 80%;
+  height: max-content;
+  min-width: min-content;
+  flex-shrink: 0;
+}
+.checkbox {
+  width: max-content;
+  height: max-content;
+}
+.textarea {
+  margin: 0 0 30px;
+  height: max-content;
+  min-width: min-content;
+}
+.text {
+  color: hsla(var(--ig-gray-900));
+  height: max-content;
+  min-width: min-content;
+}

@@ -1,0 +1,122 @@
+<div class="column-layout group">
+  <igx-tabs [disableAnimation]="true" class="tabs">
+    <igx-tab-item [selected]="true" class="overview">
+      <igx-tab-content class="column-layout tab-item-content">
+        <igx-card type="outlined" class="card">
+          <igx-card-header>
+            <h3 igxCardHeaderTitle>
+              Title goes here...
+            </h3>
+            <h5 igxCardHeaderSubtitle>
+              1234 Anywhere Street, Delta BC V4K1T8
+            </h5>
+          </igx-card-header>
+          <igx-card-content class="body-content">
+            <igx-dialog [closeOnOutsideSelect]="true" [closeOnEscape]="true" #dialog5>
+              <igx-dialog-title>
+                <h5>
+                  Confirmation
+                </h5>
+              </igx-dialog-title>
+              <ng-container>
+                <p>Are you sure you want to do this?</p>
+              </ng-container>
+              <igx-dialog-actions>
+                <button igxButton="flat" igxRipple [igxToggleAction]="dialog5">Cancel</button>
+                <button igxButton="flat" igxRipple [igxToggleAction]="dialog5">OK</button>
+              </igx-dialog-actions>
+            </igx-dialog>
+            <igx-input-group type="border" class="ig-typography__body-1 textarea">
+              <label igxLabel>Notes:</label>
+              <textarea igxInput></textarea>
+            </igx-input-group>
+          </igx-card-content>
+          <igx-card-actions class="actions-content">
+            <ng-container igxStart>
+              <button igxButton="raised" igxRipple [igxToggleAction]="dialog5" class="button">
+                Update Notes
+              </button>
+              <button igxButton="raised" igxRipple class="button">
+                Back
+              </button>
+            </ng-container>
+            <ng-container igxEnd></ng-container>
+          </igx-card-actions>
+        </igx-card>
+        <div class="column-layout group_1">
+          <igx-grid [data]="northwindCustomers" primaryKey="customerID" displayDensity="cosy" [allowFiltering]="true" filterMode="excelStyleFilter" width="100%" height="510px" class="grid">
+            <igx-column field="customerID" dataType="string" header="customerID" [sortable]="true" [selectable]="false"></igx-column>
+            <igx-paginator [perPage]="10"></igx-paginator>
+            <igx-column field="companyName" dataType="string" header="companyName" [sortable]="true" [selectable]="false"></igx-column>
+            <igx-column field="contactName" dataType="string" header="contactName" [sortable]="true" [selectable]="false"></igx-column>
+            <igx-column field="contactTitle" dataType="string" header="contactTitle" [sortable]="true" [selectable]="false"></igx-column>
+            <igx-column field="address.street" dataType="string" header="address street" [sortable]="true" [selectable]="false"></igx-column>
+            <igx-column field="address.city" dataType="string" header="address city" [sortable]="true" [selectable]="false"></igx-column>
+            <igx-column field="address.region" dataType="string" header="address region" [sortable]="true" [selectable]="false"></igx-column>
+            <igx-column field="address.postalCode" dataType="string" header="address postalCode" [sortable]="true" [selectable]="false"></igx-column>
+            <igx-column field="address.country" dataType="string" header="address country" [sortable]="true" [selectable]="false"></igx-column>
+            <igx-column field="address.phone" dataType="string" header="address phone" [sortable]="true" [selectable]="false"></igx-column>
+          </igx-grid>
+        </div>
+      </igx-tab-content>
+      <igx-tab-header>
+        <igx-icon igxTabHeaderIcon>
+          info
+        </igx-icon>
+        <span igxTabHeaderLabel>Overview</span>
+      </igx-tab-header>
+    </igx-tab-item>
+    <igx-tab-item class="overview">
+      <igx-tab-content class="column-layout tab-item-content_1">
+        <div class="row-layout group_2">
+          <igx-input-group type="border" class="input">
+            <input type="text" placeholder="ID" igxInput />
+          </igx-input-group>
+          <igx-input-group type="border" class="input_1">
+            <input type="text" placeholder="Company" igxInput />
+          </igx-input-group>
+          <igx-date-picker placeholder="mm/dd/yyyy - mm/dd/yyyy" type="border" mode="dialog" class="date-picker"></igx-date-picker>
+          <button igxButton="outlined" igxRipple class="button_1">
+            <igx-icon>
+              search
+            </igx-icon>
+            <span>Search</span>
+          </button>
+        </div>
+        <div class="row-layout group_3">
+          <igx-grid [data]="northwindCustomers" primaryKey="customerID" displayDensity="cosy" [allowFiltering]="true" filterMode="excelStyleFilter" height="535px" class="grid_1">
+            <igx-column field="customerID" dataType="string" header="customerID" [sortable]="true" [selectable]="false"></igx-column>
+            <igx-paginator [perPage]="10"></igx-paginator>
+            <igx-column field="companyName" dataType="string" header="companyName" [sortable]="true" [selectable]="false"></igx-column>
+            <igx-column field="contactName" dataType="string" header="contactName" [sortable]="true" [selectable]="false"></igx-column>
+            <igx-column field="contactTitle" dataType="string" header="contactTitle" [sortable]="true" [selectable]="false"></igx-column>
+            <igx-column field="address.street" dataType="string" header="address street" [sortable]="true" [selectable]="false"></igx-column>
+            <igx-column field="address.city" dataType="string" header="address city" [sortable]="true" [selectable]="false"></igx-column>
+            <igx-column field="address.region" dataType="string" header="address region" [sortable]="true" [selectable]="false"></igx-column>
+            <igx-column field="address.postalCode" dataType="string" header="address postalCode" [sortable]="true" [selectable]="false"></igx-column>
+            <igx-column field="address.country" dataType="string" header="address country" [sortable]="true" [selectable]="false"></igx-column>
+            <igx-column field="address.phone" dataType="string" header="address phone" [sortable]="true" [selectable]="false"></igx-column>
+          </igx-grid>
+        </div>
+      </igx-tab-content>
+      <igx-tab-header>
+        <igx-icon igxTabHeaderIcon>
+          info
+        </igx-icon>
+        <span igxTabHeaderLabel>Party</span>
+      </igx-tab-header>
+    </igx-tab-item>
+    <igx-tab-item class="overview">
+      <igx-tab-content class="row-layout tab-item-content_1">
+        <div class="column-layout group_4"></div>
+        <div class="column-layout group_4"></div>
+      </igx-tab-content>
+      <igx-tab-header>
+        <igx-icon igxTabHeaderIcon>
+          info
+        </igx-icon>
+        <span igxTabHeaderLabel>Orders</span>
+      </igx-tab-header>
+    </igx-tab-item>
+  </igx-tabs>
+</div>

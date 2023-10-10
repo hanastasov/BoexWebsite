@@ -1,0 +1,55 @@
+:host {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+}
+.row-layout {
+  display: flex;
+}
+.page-control {
+  background-color: hsla(var(--ig-success-500));
+  justify-content: flex-start;
+  align-items: center;
+  align-content: flex-start;
+  position: relative;
+  padding: 10px 3rem;
+  height: 50px;
+  min-width: 50px;
+  min-height: 50px;
+  max-height: 64px;
+  flex-shrink: 0;
+}
+.column-layout {
+  display: flex;
+  flex-direction: column;
+}
+.main-5 {
+  justify-content: flex-start;
+  align-items: center;
+  align-content: flex-start;
+  position: relative;
+  padding: 2rem;
+  min-width: 50px;
+  min-height: 50px;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.h5 {
+  height: max-content;
+  min-width: min-content;
+}
+.image {
+  object-fit: cover;
+  margin: 0 0 20px;
+  min-width: 0;
+  min-height: 0;
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+.button {
+  width: 20rem;
+  height: max-content;
+}

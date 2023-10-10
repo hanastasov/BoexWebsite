@@ -1,0 +1,75 @@
+<div class="row-layout page-control">
+  <button igxButton="flat" igxRipple class="button">
+    Save Changes
+  </button>
+  <button igxButton="flat" igxRipple routerLink="/stakeholders-module/stakeholder-new" class="button">
+    New Payment Type
+  </button>
+</div>
+<igx-dialog [closeOnOutsideSelect]="true" [closeOnEscape]="true" #dialog6>
+  <igx-dialog-title>
+    <h5>
+      Confirmation
+    </h5>
+  </igx-dialog-title>
+  <ng-container>
+    <p>Add Payment Type</p>
+  </ng-container>
+  <igx-dialog-actions>
+    <button igxButton="flat" igxRipple [igxToggleAction]="dialog6">Cancel</button>
+    <button igxButton="flat" igxRipple [igxToggleAction]="dialog6">OK</button>
+  </igx-dialog-actions>
+</igx-dialog>
+<div class="column-layout subtitle">
+  <div class="column-layout group">
+    <h5 class="h5">
+      Payment Name
+    </h5>
+  </div>
+</div>
+<div class="row-layout main">
+  <div class="column-layout buttons">
+    <div class="column-layout group_1">
+      <button igxButton="raised" igxRipple class="button_1">
+        Archive
+      </button>
+    </div>
+    <div class="column-layout group_1">
+      <button igxButton="raised" igxRipple class="button_1">
+        Archive
+      </button>
+    </div>
+    <div class="column-layout group_1">
+      <button igxButton="raised" igxRipple class="button_1">
+        Archive
+      </button>
+    </div>
+    <div class="column-layout group_1">
+      <button igxButton="raised" igxRipple class="button_1">
+        Archive
+      </button>
+    </div>
+  </div>
+  <div class="column-layout text">
+    <div class="column-layout group_1">
+      <p class="text_1">
+        SWIFT
+      </p>
+    </div>
+    <div class="column-layout group_2">
+      <p class="text_1">
+        FED WIRE
+      </p>
+    </div>
+    <div class="column-layout group_2">
+      <p class="text_1">
+        ACH
+      </p>
+    </div>
+    <div class="column-layout group_2">
+      <p class="text_1">
+        BITCOIN
+      </p>
+    </div>
+  </div>
+</div>

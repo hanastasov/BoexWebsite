@@ -1,0 +1,124 @@
+<div class="column-layout group">
+  <igx-navbar class="navbar">
+    <igx-navbar-action>
+      <button igxButton="icon" igxRipple [igxToggleAction]="navDrawer" class="button">
+        <igx-icon>
+          menu
+        </igx-icon>
+      </button>
+    </igx-navbar-action>
+    <igx-navbar-title class="navbar-content">
+      <h6 class="h6">
+        BOEX
+      </h6>
+    </igx-navbar-title>
+  </igx-navbar>
+  <div class="row-layout group_1">
+    <igx-nav-drawer [isOpen]="true" [pin]="true" [pinThreshold]="0" #navDrawer class="nav-drawer">
+      <ng-template igxDrawer>
+        <div igxDrawerItem igxRipple routerLink="/home-module/home">
+          <igx-icon class="icon">
+            home
+          </igx-icon>
+          <span>Home</span>
+        </div>
+        <div igxDrawerItem igxRipple routerLink="/home-module/home">
+          <igx-icon class="icon">
+            description
+          </igx-icon>
+          <span>BOEX</span>
+        </div>
+        <div igxDrawerItem igxRipple routerLink="/orders-module/orders">
+          <igx-icon class="icon">
+            assignment
+          </igx-icon>
+          <span>Orders</span>
+        </div>
+        <div igxDrawerItem igxRipple routerLink="/stakeholders-module/stakeholder">
+          <igx-icon class="icon">
+            group
+          </igx-icon>
+          <span>Stakeholders</span>
+        </div>
+        <div igxDrawerItem igxRipple routerLink="/sustainability-module/sustainability">
+          <igx-icon class="icon">
+            group_work
+          </igx-icon>
+          <span>Sustainability</span>
+        </div>
+        <div igxDrawerItem igxRipple>
+          <igx-icon class="icon">
+            exit_to_app
+          </igx-icon>
+          <span>Logout</span>
+        </div>
+      </ng-template>
+    </igx-nav-drawer>
+    <div class="row-layout group_1">
+      <div class="view-container">
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+  </div>
+  <div class="row-layout bottom-bar">
+    <p class="text">
+      Our website is using cookies to provide personalized experience for you on our website.
+    </p>
+    <div class="row-layout actions">
+      <button igxButton="flat" igxRipple class="button_1">
+        Learn More
+      </button>
+      <button igxButton="raised" igxRipple class="button_2">
+         I agree
+      </button>
+    </div>
+  </div>
+</div>
+<igx-dialog [closeOnOutsideSelect]="true" [closeOnEscape]="true" #dialog>
+  <igx-dialog-title>
+    <h5>
+      Confirmation
+    </h5>
+  </igx-dialog-title>
+  <ng-container>
+    <p>Are you sure you want to logout?</p>
+  </ng-container>
+  <igx-dialog-actions>
+    <button igxButton="flat" igxRipple [igxToggleAction]="dialog">Cancel</button>
+    <button igxButton="flat" igxRipple [igxToggleAction]="dialog">OK</button>
+  </igx-dialog-actions>
+</igx-dialog>
+<igx-dialog [closeOnEscape]="true">
+  <igx-dialog-title>
+    <h5>
+      Account Creation Succesfull
+    </h5>
+  </igx-dialog-title>
+  <ng-container>
+    <p class="text_1">
+      Body 1
+    </p>
+  </ng-container>
+  <igx-dialog-actions>
+    <button igxButton="flat" igxRipple class="button_3">
+      Button
+    </button>
+  </igx-dialog-actions>
+</igx-dialog>
+<igx-dialog [closeOnEscape]="false">
+  <igx-dialog-title>
+    <h5>
+      Account Creation Successful
+    </h5>
+  </igx-dialog-title>
+  <ng-container>
+    <p class="text_1">
+      A few more steps are needed to verify you and your business
+    </p>
+  </ng-container>
+  <igx-dialog-actions>
+    <button igxButton="outlined" igxRipple class="button_3">
+      Verify Business
+    </button>
+  </igx-dialog-actions>
+</igx-dialog>

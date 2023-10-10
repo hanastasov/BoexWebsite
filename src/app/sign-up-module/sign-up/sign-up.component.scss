@@ -1,0 +1,144 @@
+:host {
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+}
+.column-layout {
+  display: flex;
+  flex-direction: column;
+}
+.group {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  position: relative;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.row-layout {
+  display: flex;
+}
+.group_1 {
+  background-color: hsla(var(--ig-gray-300));
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: stretch;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.left-1 {
+  background-color: hsla(var(--ig-primary-600));
+  justify-content: center;
+  align-items: center;
+  align-content: flex-start;
+  position: relative;
+  padding: 0;
+  min-width: 292px;
+  min-height: 50px;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.group_2 {
+  justify-content: flex-start;
+  align-items: center;
+  align-content: flex-start;
+  gap: 1rem;
+  position: relative;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.right-1 {
+  background-color: hsla(var(--ig-surface-500));
+  justify-content: center;
+  align-items: stretch;
+  align-content: flex-start;
+  position: relative;
+  min-width: 584px;
+  min-height: 60vh;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.group_3 {
+  justify-content: center;
+  align-items: center;
+  align-content: flex-start;
+  position: relative;
+  padding: 0;
+  width: 70%;
+  min-width: 50px;
+  min-height: 50px;
+}
+.card {
+  width: 100%;
+  height: max-content;
+}
+.group_4 {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  top: 0;
+  bottom: 0;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+}
+.input-group-1 {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 1rem;
+  position: relative;
+  min-width: min-content;
+  min-height: min-content;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.group_5 {
+  justify-content: center;
+  align-items: stretch;
+  align-content: flex-start;
+  position: relative;
+  margin: 0 0 1rem;
+  min-width: min-content;
+  min-height: min-content;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.image {
+  object-fit: scale-down;
+  width: 300px;
+  min-width: 0;
+  min-height: 0;
+}
+.h5 {
+  text-align: center;
+  color: hsla(var(--ig-surface-500));
+  height: max-content;
+  min-width: min-content;
+}
+.h2 {
+  text-align: center;
+  color: hsla(var(--ig-gray-900));
+  margin: 0 0 2rem;
+  height: max-content;
+  min-width: min-content;
+}
+.body-content {
+  min-width: 50px;
+  min-height: 50px;
+}
+.input {
+  height: max-content;
+  min-width: min-content;
+}
+.button {
+  --igx-button-foreground: hsla(var(--ig-surface-500));
+  --igx-button-background: hsla(var(--ig-primary-500));
+  height: max-content;
+}

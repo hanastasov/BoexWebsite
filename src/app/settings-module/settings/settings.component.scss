@@ -1,0 +1,100 @@
+:host {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+}
+.column-layout {
+  display: flex;
+  flex-direction: column;
+}
+.group {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  position: relative;
+  padding: 40px 40px 60px;
+  min-width: 50px;
+  min-height: 50px;
+  flex-shrink: 0;
+}
+.title {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  position: relative;
+  margin: 0 0 40px;
+  height: min-content;
+  min-width: 50px;
+  min-height: 0;
+  flex-shrink: 0;
+}
+.group_1 {
+  background-color: hsla(var(--ig-primary-900));
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  height: 4px;
+  min-width: 50px;
+  min-height: 4px;
+  max-height: 4px;
+}
+.row-layout {
+  display: flex;
+}
+.cards {
+  justify-content: space-between;
+  align-items: stretch;
+  align-content: flex-start;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+  flex-shrink: 0;
+}
+.card {
+  margin: 0 10px 0 0;
+  width: 250px;
+  height: max-content;
+  min-width: 260px;
+  flex-shrink: 0;
+}
+.card_1 {
+  margin: 0 10px 0 0;
+  width: 240px;
+  height: max-content;
+  min-width: 260px;
+  flex-shrink: 0;
+}
+.card_2 {
+  width: 240px;
+  height: max-content;
+  min-width: 260px;
+  flex-shrink: 0;
+}
+.group_2 {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  position: relative;
+  min-width: 260px;
+  min-height: 50px;
+}
+.h5 {
+  color: hsla(var(--ig-primary-800));
+  height: max-content;
+  min-width: min-content;
+}
+.avatar {
+  --igx-avatar-background: transparent;
+  margin: 0 71px 10px 68px;
+}
+.text {
+  height: max-content;
+  min-width: min-content;
+}
+.body-content {
+  min-width: 50px;
+  min-height: 50px;
+}

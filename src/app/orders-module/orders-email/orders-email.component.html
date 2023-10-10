@@ -1,0 +1,54 @@
+<div class="row-layout page-control">
+  <button igxButton="flat" igxRipple routerLink="/orders-module/order-customers" class="button">
+    SAVE
+  </button>
+</div>
+<div class="row-layout group">
+  <igx-nav-drawer [isOpen]="true" [pin]="true" [pinThreshold]="1024" width="160px" class="nav-drawer">
+    <ng-template igxDrawer>
+      <div [isHeader]="true" igxDrawerItem igxRipple routerLink="/orders-module/order-details" class="nav-drawer-item">
+        <span>DETAILS</span>
+      </div>
+      <div [isHeader]="true" igxDrawerItem igxRipple routerLink="/orders-module/order-payments">
+        <span>PAYMENTS</span>
+      </div>
+      <div [isHeader]="true" igxDrawerItem igxRipple routerLink="/orders-module/order-negotiations">
+        <span>NEGOTIATIONS</span>
+      </div>
+      <div [isHeader]="true" igxDrawerItem igxRipple routerLink="/orders-module/orders-email">
+        <span>EMAIL</span>
+      </div>
+      <div [isHeader]="true" igxDrawerItem igxRipple routerLink="/orders-module/order-log">
+        <span>BOEX LOG</span>
+      </div>
+    </ng-template>
+  </igx-nav-drawer>
+  <div class="row-layout oder-details">
+    <div class="column-layout formemailnew">
+      <div class="row-layout email">
+        <p class="text">
+          To:
+        </p>
+        <igx-chip class="chip">
+          Charles Lovrics
+        </igx-chip>
+        <igx-chip class="chip">
+          Sofi Teleky
+        </igx-chip>
+        <igx-input-group type="border" class="input">
+          <input type="text" igxInput />
+        </igx-input-group>
+      </div>
+      <igx-input-group type="border" class="subject">
+        <input type="text" igxInput />
+        <label igxLabel>Subject:</label>
+      </igx-input-group>
+      <igx-input-group type="box" class="ig-typography__body-1 textarea">
+        <textarea placeholder="Message:" igxInput></textarea>
+      </igx-input-group>
+      <button igxButton="raised" igxRipple class="button_1">
+        Send
+      </button>
+    </div>
+  </div>
+</div>

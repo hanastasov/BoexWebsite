@@ -1,0 +1,30 @@
+<div class="row-layout page-control">
+  <button igxButton="flat" igxRipple routerLink="/orders-module/order-customers" class="button">
+    SAVE
+  </button>
+</div>
+<div class="row-layout group">
+  <igx-nav-drawer [isOpen]="true" [pin]="true" [pinThreshold]="1024" width="160px" class="nav-drawer">
+    <ng-template igxDrawer>
+      <div [isHeader]="true" igxDrawerItem igxRipple routerLink="/orders-module/order-details" class="nav-drawer-item">
+        <span>DETAILS</span>
+      </div>
+      <div [isHeader]="true" igxDrawerItem igxRipple routerLink="/orders-module/order-payments">
+        <span>PAYMENTS</span>
+      </div>
+      <div [isHeader]="true" igxDrawerItem igxRipple routerLink="/orders-module/order-negotiations">
+        <span>NEGOTIATIONS</span>
+      </div>
+      <div [isHeader]="true" igxDrawerItem igxRipple routerLink="/orders-module/orders-email">
+        <span>EMAIL</span>
+      </div>
+      <div [isHeader]="true" igxDrawerItem igxRipple routerLink="/orders-module/order-log">
+        <span>BOEX LOG</span>
+      </div>
+    </ng-template>
+  </igx-nav-drawer>
+  <igx-grid [data]="northwindRegions" primaryKey="regionID" displayDensity="cosy" [allowFiltering]="true" filterMode="excelStyleFilter" height="400px" class="grid">
+    <igx-column field="regionID" dataType="number" header="regionID" [sortable]="true" [selectable]="false"></igx-column>
+    <igx-column field="name" dataType="string" header="name" [sortable]="true" [selectable]="false"></igx-column>
+  </igx-grid>
+</div>

@@ -1,0 +1,52 @@
+<div class="row-layout page-control">
+  <button igxButton="flat" igxRipple routerLink="/stakeholders-module/stakeholder-new" class="button">
+    EDIT STAKEHOLDER
+  </button>
+  <button igxButton="flat" igxRipple routerLink="/stakeholders-module/stakeholder-new" class="button_1">
+    NEW STAKEHOLDER
+  </button>
+</div>
+<div class="row-layout nav">
+  <button igxButton="icon" igxRipple *ngIf="buttonVisible3" class="button_2">
+    <igx-icon>
+      linear_scale
+    </igx-icon>
+  </button>
+  <div [igxToggleAction]="navDrawer2" class="row-layout group">
+    <igx-icon class="icon">
+      linear_scale
+    </igx-icon>
+  </div>
+  <p class="text">
+    General Motors
+  </p>
+</div>
+<div class="row-layout group_1">
+  <igx-nav-drawer [isOpen]="true" [pin]="true" [pinThreshold]="1024" width="183px" #navDrawer2 class="nav-drawer">
+    <ng-template igxDrawer>
+      <div [isHeader]="true" igxDrawerItem igxRipple class="nav-drawer-item">
+        <span>&#123; company 1&#125;</span>
+      </div>
+      <div [isHeader]="true" igxDrawerItem igxRipple>
+        <span>&#123; company 2&#125;</span>
+      </div>
+      <div [isHeader]="true" igxDrawerItem igxRipple>
+        <span>&#123; company 3&#125;</span>
+      </div>
+      <div [isHeader]="true" igxDrawerItem igxRipple>
+        <span>&#123; company 4&#125;</span>
+      </div>
+    </ng-template>
+  </igx-nav-drawer>
+  <div class="row-layout transaction-list">
+    <igx-grid [data]="northwindShippers" primaryKey="shipperID" displayDensity="cosy" cellSelection="single" [allowFiltering]="true" filterMode="quickFilter" height="400px" class="grid">
+      <igx-grid-toolbar>
+        <igx-grid-toolbar-title>Transaction List</igx-grid-toolbar-title>
+      </igx-grid-toolbar>
+      <igx-column field="shipperID" dataType="number" header="shipperID" [sortable]="true" [hasSummary]="true" [selectable]="false"></igx-column>
+      <igx-paginator [perPage]="10"></igx-paginator>
+      <igx-column field="companyName" dataType="string" header="companyName" [sortable]="true" [hasSummary]="true" [selectable]="false"></igx-column>
+      <igx-column field="phone" dataType="string" header="phone" [sortable]="true" [hasSummary]="true" [selectable]="false"></igx-column>
+    </igx-grid>
+  </div>
+</div>

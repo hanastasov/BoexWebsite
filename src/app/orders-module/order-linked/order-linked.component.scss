@@ -1,0 +1,94 @@
+:host {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+}
+.row-layout {
+  display: flex;
+}
+.page-control {
+  background-color: hsla(var(--ig-secondary-100));
+  justify-content: flex-start;
+  align-items: center;
+  align-content: flex-start;
+  position: relative;
+  padding: 0 30px;
+  height: 64px;
+  min-width: 50px;
+  min-height: 64px;
+  max-height: 64px;
+}
+.search-bar {
+  background-color: hsla(var(--ig-surface-500));
+  justify-content: flex-start;
+  align-items: flex-end;
+  align-content: flex-start;
+  overflow: hidden;
+  position: relative;
+  margin: 0 10px 0 0;
+  width: 220px;
+  height: 50px;
+  min-width: 50px;
+  min-height: 50px;
+}
+.column-layout {
+  display: flex;
+  flex-direction: column;
+}
+.order-serve {
+  justify-content: flex-start;
+  align-items: center;
+  align-content: flex-start;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.order-serve-form {
+  background-color: hsla(var(--ig-gray-200));
+  justify-content: space-evenly;
+  align-items: stretch;
+  align-content: flex-start;
+  position: relative;
+  margin: 150px;
+  padding: 0 10px;
+  width: 431px;
+  min-width: 700px;
+  min-height: 431px;
+}
+.input {
+  width: 220px;
+  height: max-content;
+  min-width: min-content;
+  flex-shrink: 0;
+}
+.button {
+  --igx-button-foreground: hsla(var(--ig-surface-500));
+  --igx-button-background: hsla(var(--ig-secondary-700));
+  margin: 0 10px 0 0;
+  width: 120px;
+  height: max-content;
+  flex-shrink: 0;
+}
+.details {
+  height: max-content;
+  min-width: min-content;
+}
+.button_1 {
+  --igx-button-foreground: hsla(var(--ig-surface-500));
+  --igx-button-background: hsla(var(--ig-secondary-500));
+  width: 130px;
+  height: max-content;
+}
+.add-documents {
+  object-fit: contain;
+  width: 92px;
+  height: 92px;
+  min-width: 0;
+  min-height: 0;
+  flex-shrink: 0;
+}

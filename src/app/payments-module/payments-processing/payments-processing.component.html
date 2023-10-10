@@ -1,0 +1,101 @@
+<div class="row-layout page-control">
+  <button igxButton="flat" igxRipple class="button">
+    Save Changes
+  </button>
+  <button igxButton="flat" igxRipple routerLink="/stakeholders-module/stakeholder-new" class="button">
+    New Processor
+  </button>
+</div>
+<div class="row-layout gateway">
+  <div class="column-layout main">
+    <div class="row-layout group">
+      <div class="column-layout gateway-text">
+        <h5 class="h5">
+          Select Gateway
+        </h5>
+        <p class="text">
+          Select your payment processor
+        </p>
+      </div>
+      <igx-select type="border" (click)="groupVisible18 = !groupVisible18" class="select">
+        <igx-select-item value="Authorize Net">
+          Authorize Net
+        </igx-select-item>
+        <igx-select-item value="Concardis">
+          Concardis
+        </igx-select-item>
+        <igx-select-item value="Go Coin">
+          Go Coin
+        </igx-select-item>
+        <igx-select-item value="Vitesse">
+          Vitesse
+        </igx-select-item>
+        <igx-select-item value="Worldpay">
+          Worldpay
+        </igx-select-item>
+        <label igxLabel>GATEWAY</label>
+      </igx-select>
+    </div>
+  </div>
+</div>
+<div *ngIf="groupVisible18" class="column-layout form">
+  <div class="row-layout alias">
+    <p class="text_1">
+      Account Alias
+    </p>
+    <igx-input-group type="border" class="input">
+      <input type="text" igxInput />
+      <label igxLabel>Account Alias</label>
+    </igx-input-group>
+  </div>
+  <div class="row-layout alias">
+    <p class="text_1">
+      API Login ID
+    </p>
+    <igx-input-group type="border" class="input">
+      <input type="text" igxInput />
+      <label igxLabel>API Login ID</label>
+    </igx-input-group>
+  </div>
+  <div class="row-layout alias">
+    <p class="text_1">
+      Transaction Key
+    </p>
+    <igx-input-group type="border" class="input_1">
+      <input type="text" igxInput />
+      <label igxLabel>Transaction Key</label>
+    </igx-input-group>
+  </div>
+  <div class="row-layout alias">
+    <p class="text_1">
+      Company Name
+    </p>
+    <igx-input-group type="border" class="input_1">
+      <input type="text" igxInput />
+      <label igxLabel>Company Name</label>
+    </igx-input-group>
+  </div>
+  <div class="row-layout alias">
+    <p class="text_1">
+      Tax ID
+    </p>
+    <igx-input-group type="border" class="input_1">
+      <input type="text" igxInput />
+      <label igxLabel>Tax ID</label>
+    </igx-input-group>
+  </div>
+</div>
+<igx-dialog [closeOnOutsideSelect]="true" [closeOnEscape]="true" #dialog8>
+  <igx-dialog-title>
+    <h5>
+      Confirmation
+    </h5>
+  </igx-dialog-title>
+  <ng-container>
+    <p>Add payment gateway</p>
+  </ng-container>
+  <igx-dialog-actions>
+    <button igxButton="flat" igxRipple [igxToggleAction]="dialog8">Cancel</button>
+    <button igxButton="flat" igxRipple [igxToggleAction]="dialog8">OK</button>
+  </igx-dialog-actions>
+</igx-dialog>

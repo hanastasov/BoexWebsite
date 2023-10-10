@@ -1,0 +1,41 @@
+<div class="row-layout page-control">
+  <div class="row-layout search-bar">
+    <igx-input-group type="box" class="input">
+      <input type="text" igxInput />
+      <label igxLabel>SEARCH CLIENTS</label>
+    </igx-input-group>
+  </div>
+  <button igxButton="flat" igxRipple class="button">
+    Edit
+  </button>
+  <button igxButton="flat" igxRipple routerLink="/orders-module/order-customers" class="button">
+    Remove
+  </button>
+</div>
+<div class="column-layout order-serve">
+  <div class="column-layout order-serve-form">
+    <igx-input-group type="border" class="details">
+      <input type="text" igxInput />
+      <label igxLabel>Details / Description / Terms</label>
+    </igx-input-group>
+    <img src="/assets/Upload.png" class="add-documents" />
+    <igx-input-group type="border" class="details">
+      <input type="text" igxInput />
+      <label igxLabel>Interest/Exchange Rate</label>
+    </igx-input-group>
+    <igx-input-group type="border" class="details">
+      <input type="text" igxInput />
+      <label igxLabel>Interest/Exchange Rate</label>
+    </igx-input-group>
+    <igx-input-group type="border" class="details">
+      <input type="text" igxInput />
+      <label igxLabel>Interest/Exchange Rate</label>
+    </igx-input-group>
+    <button igxButton="raised" igxRipple routerLink="/orders-module/order-details" class="button_1">
+      <igx-icon>
+        notifications
+      </igx-icon>
+      <span>CONSIGN</span>
+    </button>
+  </div>
+</div>

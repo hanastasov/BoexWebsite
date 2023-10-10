@@ -1,0 +1,47 @@
+<igx-card type="outlined" class="card">
+  <igx-card-header>
+    <h3 igxCardHeaderTitle>
+      Welcome to Boex
+    </h3>
+    <h5 igxCardHeaderSubtitle>
+      Signup
+    </h5>
+  </igx-card-header>
+  <igx-card-content class="body-content">
+    <div class="column-layout address">
+      <igx-input-group type="border" class="user-input">
+        <input type="text" igxInput />
+        <label igxLabel>Address line 1</label>
+      </igx-input-group>
+      <igx-input-group type="border" class="user-input">
+        <input type="text" igxInput />
+        <label igxLabel>Address line 2</label>
+      </igx-input-group>
+      <igx-input-group type="border" class="user-input">
+        <input type="text" igxInput />
+        <label igxLabel>City</label>
+      </igx-input-group>
+      <igx-input-group type="border" class="user-input">
+        <input type="text" igxInput />
+        <label igxLabel>State</label>
+      </igx-input-group>
+      <igx-input-group type="border" [igxToggleAction]="dropdown1" class="user-input">
+        <input type="text" igxInput />
+        <label igxLabel>Country</label>
+      </igx-input-group>
+      <igx-input-group type="border" class="user-input">
+        <input type="text" igxInput />
+        <label igxLabel>Postal Code</label>
+      </igx-input-group>
+      <igx-drop-down #dropdown1 class="user-input">
+        <igx-drop-down-item>
+          Option
+        </igx-drop-down-item>
+      </igx-drop-down>
+    </div>
+  </igx-card-content>
+  <igx-card-actions class="actions-content">
+    <ng-container igxStart></ng-container>
+    <ng-container igxEnd></ng-container>
+  </igx-card-actions>
+</igx-card>

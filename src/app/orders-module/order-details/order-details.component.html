@@ -1,0 +1,180 @@
+<div class="row-layout page-control">
+  <button igxButton="flat" igxRipple routerLink="/orders-module/order-customers" class="button">
+    SAVE
+  </button>
+</div>
+<div class="row-layout group">
+  <igx-nav-drawer [isOpen]="true" [pin]="true" [pinThreshold]="1024" width="160px" class="nav-drawer">
+    <ng-template igxDrawer>
+      <div [isHeader]="true" igxDrawerItem igxRipple routerLink="/orders-module/order-details" class="nav-drawer-item">
+        <span>DETAILS</span>
+      </div>
+      <div [isHeader]="true" igxDrawerItem igxRipple routerLink="/orders-module/order-payments">
+        <span>PAYMENTS</span>
+      </div>
+      <div [isHeader]="true" igxDrawerItem igxRipple routerLink="/orders-module/order-negotiations">
+        <span>NEGOTIATIONS</span>
+      </div>
+      <div [isHeader]="true" igxDrawerItem igxRipple routerLink="/orders-module/orders-email">
+        <span>EMAIL</span>
+      </div>
+      <div [isHeader]="true" igxDrawerItem igxRipple>
+        <span>BOEX LOG</span>
+      </div>
+    </ng-template>
+  </igx-nav-drawer>
+  <div class="row-layout oder-details">
+    <div class="column-layout basic-details">
+      <div class="row-layout group_1">
+        <h5 class="h5">
+          Basic Details
+        </h5>
+      </div>
+      <div class="row-layout group_2">
+        <p class="ig-typography__body-2 text">
+          BOEX ID
+        </p>
+        <p class="text_1">
+          8856884
+        </p>
+      </div>
+      <div class="row-layout group_2">
+        <p class="ig-typography__body-2 text">
+          Date
+        </p>
+        <p class="text_1">
+          2020-01-23
+        </p>
+      </div>
+      <div class="row-layout group_2">
+        <p class="ig-typography__body-2 text">
+          Mode
+        </p>
+        <p class="text_1">
+          ONLINE / API 
+        </p>
+      </div>
+      <div class="row-layout group_2"></div>
+      <div class="row-layout group_2">
+        <p class="ig-typography__body-2 text">
+          Accepted
+        </p>
+        <p class="text_1">
+          No
+        </p>
+      </div>
+      <div class="row-layout group_2">
+        <p class="ig-typography__body-2 text">
+          Issued
+        </p>
+        <p class="text_1">
+          No
+        </p>
+      </div>
+      <div class="row-layout group_2">
+        <p class="ig-typography__body-2 text">
+          Presented
+        </p>
+        <p class="text_1">
+          No
+        </p>
+      </div>
+      <div class="row-layout group_2">
+        <p class="ig-typography__body-2 text">
+          Resolved
+        </p>
+        <p class="text_1">
+          N/A
+        </p>
+      </div>
+      <div class="row-layout group_2"></div>
+      <div class="row-layout group_2">
+        <p class="ig-typography__body-2 text">
+          Stated Place of Acceptance
+        </p>
+        <p class="text_1">
+          Dublin, Ireland
+        </p>
+      </div>
+      <div class="row-layout group_2">
+        <p class="ig-typography__body-2 text">
+          Stated Place of Acceptance
+        </p>
+        <p class="text_1">
+          Dublin, Ireland
+        </p>
+      </div>
+      <div class="row-layout group_2">
+        <p class="ig-typography__body-2 text">
+          Stated Place of Acceptance
+        </p>
+        <p class="text_1">
+          Dublin, Ireland
+        </p>
+      </div>
+    </div>
+    <div class="column-layout accounting">
+      <div class="row-layout group_1">
+        <h5 class="h5">
+          Accounting
+        </h5>
+      </div>
+      <div class="row-layout group_2">
+        <p class="ig-typography__body-2 text">
+          Total
+        </p>
+        <p class="text_1">
+          €10.00 
+        </p>
+      </div>
+      <div class="row-layout group_2">
+        <p class="ig-typography__body-2 text">
+          Paymenets
+        </p>
+        <p class="text_1">
+          €0.00 
+        </p>
+      </div>
+      <div class="row-layout group_2">
+        <p class="ig-typography__body-2 text">
+          Balance
+        </p>
+        <p class="text_1">
+          €10.00
+        </p>
+      </div>
+      <div class="row-layout group_2">
+        <p class="ig-typography__body-2 text">
+          Sub Total
+        </p>
+        <p class="text_1">
+          €10.00
+        </p>
+      </div>
+      <div class="row-layout group_2">
+        <p class="ig-typography__body-2 text">
+          Taxed
+        </p>
+        <p class="text_1">
+          €0.00 
+        </p>
+      </div>
+      <div class="row-layout group_2">
+        <p class="ig-typography__body-2 text">
+          Not Taxed
+        </p>
+        <p class="text_1">
+          €0.00 
+        </p>
+      </div>
+      <div class="row-layout group_2">
+        <p class="ig-typography__body-2 text">
+          Total Taxed
+        </p>
+        <p class="text_1">
+          €0.00 
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

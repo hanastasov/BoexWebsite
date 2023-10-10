@@ -1,0 +1,85 @@
+<div class="column-layout group">
+  <div class="row-layout group_1">
+    <h5 class="h5">
+      Account Set Up
+    </h5>
+  </div>
+  <div class="row-layout group_2">
+    <igx-card type="outlined" class="card">
+      <igx-card-header>
+        <h3 igxCardHeaderTitle>
+        </h3>
+        <h5 igxCardHeaderSubtitle>
+        </h5>
+      </igx-card-header>
+      <igx-card-content class="body-content">
+        <div class="column-layout group_3">
+          <h3 class="h3">
+            Expected Activity 
+          </h3>
+          <div class="column-layout name">
+            <h4 class="content">
+              Estimated turnover
+            </h4>
+            <div class="column-layout group_4">
+              <div class="row-layout group_5">
+                <igx-input-group type="border" class="input">
+                  <input type="number" igxInput />
+                  <label igxLabel>Duration</label>
+                </igx-input-group>
+              </div>
+            </div>
+            <div *ngIf="groupVisible10" class="row-layout group_6">
+              <button igxButton="raised" igxRipple class="button">
+                Next
+              </button>
+            </div>
+          </div>
+          <div class="column-layout name">
+            <h4 class="content">
+              Expected Account Activity
+            </h4>
+            <h5 class="content">
+              Domestic
+            </h5>
+            <div class="column-layout group_4">
+              <div class="row-layout group_7">
+                <igx-input-group type="border" class="input">
+                  <input type="number" igxInput />
+                  <label igxLabel>Volume</label>
+                </igx-input-group>
+                <igx-input-group type="border" class="input">
+                  <input type="number" igxInput />
+                  <label igxLabel>Total Amount</label>
+                </igx-input-group>
+              </div>
+            </div>
+            <h5 class="content">
+              International
+            </h5>
+            <div class="column-layout group_4">
+              <div class="row-layout group_7">
+                <igx-input-group type="border" class="input">
+                  <input type="number" igxInput />
+                  <label igxLabel>Volume</label>
+                </igx-input-group>
+                <igx-input-group type="border" class="input">
+                  <input type="number" igxInput />
+                  <label igxLabel>Total Amount</label>
+                </igx-input-group>
+              </div>
+            </div>
+          </div>
+          <div class="row-layout group_8">
+            <button igxButton="outlined" igxRipple routerLink="/account/account-setup-progress" class="button">
+              Save For Later
+            </button>
+            <button igxButton="raised" igxRipple routerLink="/account/account-setup-progress" class="button_1">
+              Save and Submit
+            </button>
+          </div>
+        </div>
+      </igx-card-content>
+    </igx-card>
+  </div>
+</div>

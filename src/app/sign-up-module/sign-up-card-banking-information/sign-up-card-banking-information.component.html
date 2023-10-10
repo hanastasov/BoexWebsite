@@ -1,0 +1,45 @@
+<div class="column-layout main">
+  <igx-card type="outlined" class="card">
+    <igx-card-header>
+      <h3 igxCardHeaderTitle>
+        Welcome to Boex
+      </h3>
+      <h5 igxCardHeaderSubtitle>
+        Signup
+      </h5>
+    </igx-card-header>
+    <igx-card-content class="body-content">
+      <div class="column-layout banking-info">
+        <igx-input-group type="border" class="input">
+          <input type="text" igxInput />
+          <label igxLabel>Bank Name</label>
+        </igx-input-group>
+        <igx-input-group type="border" class="input">
+          <input type="text" igxInput />
+          <label igxLabel>Routing number</label>
+        </igx-input-group>
+        <igx-input-group type="border" class="input">
+          <input type="text" igxInput />
+          <label igxLabel>Account Number</label>
+        </igx-input-group>
+        <igx-input-group type="border" class="input">
+          <input type="text" igxInput />
+          <label igxLabel>IBAN</label>
+        </igx-input-group>
+        <div class="row-layout group">
+          <igx-input-group type="border" class="input_1">
+            <input type="text" igxInput />
+            <label igxLabel>Credit card number</label>
+          </igx-input-group>
+          <igx-date-picker type="border" todayButtonLabel="Today" cancelButtonLabel="Cancel" mode="dialog" class="date-picker">
+            <label igxLabel>Expiry Date</label>
+          </igx-date-picker>
+        </div>
+      </div>
+    </igx-card-content>
+    <igx-card-actions class="actions-content">
+      <ng-container igxStart></ng-container>
+      <ng-container igxEnd></ng-container>
+    </igx-card-actions>
+  </igx-card>
+</div>

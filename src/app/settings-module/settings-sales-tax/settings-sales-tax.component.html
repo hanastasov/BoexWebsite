@@ -1,0 +1,13 @@
+<div class="row-layout page-control">
+  <button igxButton="flat" igxRipple class="button">
+    Save Changes
+  </button>
+  <button igxButton="raised" igxRipple routerLink="/stakeholders-module/stakeholder-new" class="button_1">
+    New Tax
+  </button>
+</div>
+<igx-grid [data]="northwindCategories" primaryKey="categoryID" displayDensity="cosy" [allowFiltering]="true" filterMode="excelStyleFilter" class="grid">
+  <igx-column field="categoryID" dataType="number" header="categoryID" [sortable]="true" [selectable]="false"></igx-column>
+  <igx-column field="description" dataType="string" header="description" [sortable]="true" [selectable]="false"></igx-column>
+  <igx-column field="name" dataType="string" header="name" [sortable]="true" [selectable]="false"></igx-column>
+</igx-grid>

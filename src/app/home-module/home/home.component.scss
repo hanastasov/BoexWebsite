@@ -1,0 +1,125 @@
+:host {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+}
+.column-layout {
+  display: flex;
+  flex-direction: column;
+}
+.parent-layout {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+.row-layout {
+  display: flex;
+}
+.group {
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: space-evenly;
+  gap: 40px;
+  position: relative;
+  padding: 40px;
+  min-width: 50px;
+  min-height: 50px;
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+.welcome {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  position: relative;
+  margin: 0;
+  min-width: 700px;
+  min-height: 50px;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.cards-1 {
+  justify-content: space-between;
+  align-items: center;
+  align-content: stretch;
+  min-width: 200px;
+  min-height: 50px;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.chart-and-cards {
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 40px;
+  position: relative;
+  padding: 0 40px;
+  min-width: 50px;
+  min-height: 50px;
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+.group_1 {
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
+  position: relative;
+  padding: 20px 0;
+  min-width: 700px;
+  min-height: 600px;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.cards {
+  justify-content: space-between;
+  align-items: center;
+  align-content: stretch;
+  min-width: 300px;
+  min-height: 50px;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.card {
+  margin: 0 0 20px;
+  width: 100%;
+  height: max-content;
+  min-width: min-content;
+}
+.card_1 {
+  width: 100%;
+  height: max-content;
+  min-width: min-content;
+}
+.content {
+  height: max-content;
+  min-width: min-content;
+}
+.text {
+  margin: 0 0 1rem;
+  height: max-content;
+  min-width: min-content;
+}
+.body-content {
+  min-width: 50px;
+  min-height: 50px;
+}
+.select {
+  margin: 0 0 1rem;
+  height: max-content;
+  min-width: min-content;
+}
+.button {
+  --igx-button-foreground: hsla(var(--ig-gray-300));
+  --igx-button-background: hsla(var(--ig-secondary-500));
+  height: max-content;
+}

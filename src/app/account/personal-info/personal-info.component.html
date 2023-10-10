@@ -1,0 +1,153 @@
+<div class="column-layout group">
+  <div class="row-layout group_1">
+    <h5 class="h5">
+      Account Set Up
+    </h5>
+  </div>
+  <div class="row-layout group_2">
+    <igx-card type="outlined" class="card">
+      <igx-card-header>
+        <h3 igxCardHeaderTitle>
+        </h3>
+        <h5 igxCardHeaderSubtitle>
+        </h5>
+      </igx-card-header>
+      <igx-card-content class="body-content">
+        <div class="column-layout group_3">
+          <h4 class="h4">
+            Personal Info
+          </h4>
+          <div class="column-layout address">
+            <h5 class="h5_1">
+              Address
+            </h5>
+            <div class="column-layout group_4">
+              <div class="row-layout group_5">
+                <igx-input-group type="border" class="input">
+                  <input type="text" igxInput />
+                  <label igxLabel>Address</label>
+                </igx-input-group>
+              </div>
+              <div class="row-layout group_6">
+                <igx-input-group type="border" class="input_1">
+                  <input type="text" igxInput />
+                  <label igxLabel>City</label>
+                </igx-input-group>
+                <igx-input-group type="border" class="input_1">
+                  <input type="text" igxInput />
+                  <label igxLabel>State</label>
+                </igx-input-group>
+              </div>
+              <div class="row-layout group_6">
+                <igx-input-group type="border" class="input_1">
+                  <input type="text" igxInput />
+                  <label igxLabel>Country</label>
+                </igx-input-group>
+                <igx-input-group type="border" class="input_1">
+                  <input type="text" igxInput />
+                  <label igxLabel>Postal Code</label>
+                </igx-input-group>
+              </div>
+            </div>
+            <div *ngIf="groupVisible4" class="row-layout group_7">
+              <button igxButton="raised" igxRipple class="button">
+                Next
+              </button>
+            </div>
+          </div>
+          <div class="column-layout address">
+            <h5 class="h5_1">
+              Proof of Address
+            </h5>
+            <p class="content">
+              Please upload a current utility bill or bank statement with the address above
+            </p>
+            <div class="column-layout group_8">
+              <igx-input-group type="border" class="user-input">
+                <input type="text" placeholder="This will be a file upload not available in app builder atm" igxInput />
+                <label igxLabel>File upload</label>
+              </igx-input-group>
+            </div>
+            <div *ngIf="groupVisible5" class="row-layout group_7">
+              <button igxButton="raised" igxRipple class="button">
+                Next
+              </button>
+            </div>
+          </div>
+          <div class="column-layout address">
+            <h5 class="content">
+              Date Of Birth
+            </h5>
+            <igx-date-picker type="border" class="date-picker">
+              <label igxLabel>Date of Birth</label>
+            </igx-date-picker>
+          </div>
+          <div class="column-layout address">
+            <h5 class="content">
+              Nationality
+            </h5>
+            <igx-select type="border" placeholder="Will pull &quot;all&quot; options from db" class="user-input">
+              <igx-select-item value="Ca">
+                Canada
+              </igx-select-item>
+              <igx-select-item value="USA">
+                United States of America
+              </igx-select-item>
+              <igx-select-item value="UK">
+                United Kingdom
+              </igx-select-item>
+              <label igxLabel>Nationality</label>
+            </igx-select>
+          </div>
+          <div class="column-layout address">
+            <h5 class="content">
+              Occupation
+            </h5>
+            <igx-input-group type="border" class="user-input">
+              <input type="text" igxInput />
+              <label igxLabel>Occupation</label>
+            </igx-input-group>
+          </div>
+          <div class="column-layout address">
+            <h5 class="content">
+              Proof of Identification
+            </h5>
+            <p class="text">
+              A passport or driving license is required to verify who you are
+            </p>
+            <igx-radio-group value="1" class="radio-group">
+              <igx-radio value="1" (click)="inputVisible = !inputVisible" class="radio">
+                Passport
+              </igx-radio>
+              <igx-radio value="2" class="radio">
+                Drivers License 
+              </igx-radio>
+            </igx-radio-group>
+            <div class="row-layout group_9">
+              <igx-input-group type="border" *ngIf="inputVisible" class="input_1">
+                <input type="text" igxInput />
+                <label igxLabel>Passport Number</label>
+              </igx-input-group>
+              <igx-input-group type="border" *ngIf="inputVisible1" class="input_1">
+                <input type="text" igxInput />
+                <label igxLabel>Drivers License Number</label>
+              </igx-input-group>
+              <igx-input-group type="border" class="input_1">
+                <input type="text" igxInput />
+                <label igxLabel>File upload</label>
+              </igx-input-group>
+            </div>
+          </div>
+          <div class="row-layout group_10">
+            <button igxButton="outlined" igxRipple routerLink="/account/account-setup-progress" class="button">
+              Save For Later
+            </button>
+            <button igxButton="raised" igxRipple routerLink="/account/account-setup-progress" class="button_1">
+              Save and Submit
+            </button>
+          </div>
+        </div>
+      </igx-card-content>
+    </igx-card>
+  </div>
+</div>

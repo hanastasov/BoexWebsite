@@ -1,0 +1,39 @@
+:host {
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+}
+.card {
+  height: max-content;
+  min-width: 320px;
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+.column-layout {
+  display: flex;
+  flex-direction: column;
+}
+.address {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 15px;
+  position: relative;
+  height: min-content;
+  min-width: 50px;
+  min-height: 50px;
+}
+.body-content {
+  min-width: 50px;
+  min-height: 50px;
+}
+.actions-content {
+  min-width: 50px;
+  min-height: 40px;
+}
+.user-input {
+  height: max-content;
+  min-width: min-content;
+}

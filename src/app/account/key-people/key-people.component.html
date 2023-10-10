@@ -1,0 +1,319 @@
+<div class="column-layout group">
+  <div class="row-layout group_1">
+    <h5 class="h5">
+      Account Set Up
+    </h5>
+  </div>
+  <div class="row-layout group_2">
+    <igx-card class="card">
+      <igx-card-header>
+        <h3 igxCardHeaderTitle>
+        </h3>
+        <h5 igxCardHeaderSubtitle>
+        </h5>
+      </igx-card-header>
+      <igx-card-content class="body-content">
+        <div class="column-layout group_3">
+          <div class="column-layout info">
+            <div class="column-layout group_4">
+              <h4 class="content">
+                Key People
+              </h4>
+              <p class="text">
+                Please provide information on Directors, Beneficial Owners and Account Signatories
+              </p>
+            </div>
+            <div class="column-layout group_4">
+              <h5 class="content">
+                Company Directors
+              </h5>
+              <p class="text">
+                Provide information on registered company director. These are individuals who are legally authorized to act on behalf of the Company
+              </p>
+            </div>
+            <div class="column-layout group_4">
+              <h5 class="content">
+                Beneficial Owners
+              </h5>
+              <p class="text">
+                Individuals who directly or indirectly own or control 25% or more of a corporation. Beneficial owners cannot be other corporations, trusts or other entities. They must be the individuals who are the owners or controllers of the entity
+              </p>
+            </div>
+            <div class="column-layout group_4">
+              <h5 class="content">
+                Shareholders
+              </h5>
+              <p class="text">
+                Individuals or entities that have significant control or ownership
+              </p>
+            </div>
+            <div class="column-layout group_4">
+              <h5 class="h5_1">
+                Account Signatories
+              </h5>
+              <p class="text">
+                a person who has been appointed with the powers to commit the authorizing organization to a binding agreement.
+              </p>
+            </div>
+          </div>
+          <div class="column-layout people-container">
+            <h5 class="h5_2">
+              People
+            </h5>
+            <p class="text">
+              People you add will show up in list below for you to review and edit
+            </p>
+            <igx-list class="list">
+              <igx-list-item [isHeader]="false">
+                <span igxListLineTitle>Person 1</span>
+                <span igxListLineSubTitle>Roles: Director</span>
+                <span igxListAction>
+                  <igx-icon class="icon">
+                    mode_edit_outline
+                  </igx-icon>
+                </span>
+              </igx-list-item>
+              <igx-list-item [isHeader]="false">
+                <span igxListLineTitle>Person 1</span>
+                <span igxListLineSubTitle>Roles: Director</span>
+                <span igxListAction>
+                  <igx-icon class="icon">
+                    mode_edit_outline
+                  </igx-icon>
+                </span>
+              </igx-list-item>
+              <igx-list-item [isHeader]="false">
+                <span igxListLineTitle>Person 1</span>
+                <span igxListLineSubTitle>Roles: Director</span>
+                <span igxListAction>
+                  <igx-icon class="icon">
+                    mode_edit_outline
+                  </igx-icon>
+                </span>
+              </igx-list-item>
+              <igx-list-item [isHeader]="false">
+                <span igxListLineTitle>Person 1</span>
+                <span igxListLineSubTitle>Roles: Director</span>
+                <span igxListAction>
+                  <igx-icon class="icon">
+                    mode_edit_outline
+                  </igx-icon>
+                </span>
+              </igx-list-item>
+            </igx-list>
+            <button igxButton="raised" igxRipple [igxToggleAction]="dialog1" class="button">
+              Add new person
+            </button>
+          </div>
+          <div class="row-layout group_5">
+            <button igxButton="outlined" igxRipple routerLink="/account/account-setup-progress" class="button_1">
+              Save For Later
+            </button>
+            <button igxButton="raised" igxRipple routerLink="/account/account-setup-progress" class="button_2">
+              Save and Submit
+            </button>
+          </div>
+        </div>
+      </igx-card-content>
+    </igx-card>
+  </div>
+</div>
+<igx-dialog [closeOnOutsideSelect]="true" [closeOnEscape]="true" #dialog1>
+  <igx-dialog-title>
+    <h5>
+      New Person
+    </h5>
+  </igx-dialog-title>
+  <ng-container>
+    <div class="column-layout group_6">
+      <div class="column-layout group_7">
+        <div class="column-layout person-type">
+          <h5 class="h5_2">
+            Person Type
+          </h5>
+          <p class="text">
+            Select all that apply to this person
+          </p>
+          <div class="row-layout group_8">
+            <igx-checkbox labelPosition="after" class="user-input_1">
+              Company Director
+            </igx-checkbox>
+            <igx-checkbox labelPosition="after" class="user-input_1">
+              Beneficial Owner
+            </igx-checkbox>
+            <igx-checkbox labelPosition="after" class="user-input_1">
+              Shareholder
+            </igx-checkbox>
+            <igx-checkbox labelPosition="after" class="user-input_1">
+               Account Signatory
+            </igx-checkbox>
+          </div>
+          <div *ngIf="groupVisible6" class="row-layout group_9">
+            <button igxButton="raised" igxRipple class="button_1">
+              Next
+            </button>
+          </div>
+        </div>
+        <div class="column-layout name-1">
+          <h5 class="h5_2">
+            Full Name
+          </h5>
+          <div class="column-layout group_10">
+            <div class="row-layout group_11">
+              <igx-input-group type="border" class="input">
+                <input type="text" igxInput />
+                <label igxLabel>First Name</label>
+              </igx-input-group>
+            </div>
+            <div class="row-layout group_12">
+              <igx-input-group type="border" class="input_1">
+                <input type="text" igxInput />
+                <label igxLabel>Middle Name</label>
+              </igx-input-group>
+            </div>
+            <div class="row-layout group_12">
+              <igx-input-group type="border" class="input_1">
+                <input type="text" igxInput />
+                <label igxLabel>Last Name</label>
+              </igx-input-group>
+            </div>
+          </div>
+          <div *ngIf="groupVisible7" class="row-layout group_9">
+            <button igxButton="raised" igxRipple class="button_1">
+              Next
+            </button>
+          </div>
+        </div>
+        <div class="column-layout name-1">
+          <h5 class="h5_2">
+            Address
+          </h5>
+          <div class="column-layout group_10">
+            <div class="row-layout group_11">
+              <igx-input-group type="border" class="input">
+                <input type="text" igxInput />
+                <label igxLabel>Address</label>
+              </igx-input-group>
+            </div>
+            <div class="row-layout group_12">
+              <igx-input-group type="border" class="input_1">
+                <input type="text" igxInput />
+                <label igxLabel>City</label>
+              </igx-input-group>
+              <igx-input-group type="border" class="input_1">
+                <input type="text" igxInput />
+                <label igxLabel>State</label>
+              </igx-input-group>
+            </div>
+            <div class="row-layout group_12">
+              <igx-input-group type="border" class="input_1">
+                <input type="text" igxInput />
+                <label igxLabel>Country</label>
+              </igx-input-group>
+              <igx-input-group type="border" class="input_1">
+                <input type="text" igxInput />
+                <label igxLabel>Postal Code</label>
+              </igx-input-group>
+            </div>
+          </div>
+          <div *ngIf="groupVisible8" class="row-layout group_9">
+            <button igxButton="raised" igxRipple class="button_1">
+              Next
+            </button>
+          </div>
+        </div>
+        <div class="column-layout name-1">
+          <h5 class="h5_2">
+            Proof of Address
+          </h5>
+          <p class="content_2">
+            Please upload a current utility bill or bank statement with the address above
+          </p>
+          <div class="column-layout group_13">
+            <igx-input-group type="border" class="user-input">
+              <input type="text" placeholder="This will be a file upload not available in app builder atm" igxInput />
+              <label igxLabel>File upload</label>
+            </igx-input-group>
+          </div>
+          <div *ngIf="groupVisible9" class="row-layout group_9">
+            <button igxButton="raised" igxRipple class="button_1">
+              Next
+            </button>
+          </div>
+        </div>
+        <div class="column-layout name-1">
+          <h5 class="content_2">
+            Date Of Birth
+          </h5>
+          <igx-date-picker type="border" class="date-picker">
+            <label igxLabel>Date of Birth</label>
+          </igx-date-picker>
+        </div>
+        <div class="column-layout name-1">
+          <h5 class="content_2">
+            Nationality
+          </h5>
+          <igx-select type="border" placeholder="Will pull &quot;all&quot; options from db" class="user-input">
+            <igx-select-item value="Ca">
+              Canada
+            </igx-select-item>
+            <igx-select-item value="USA">
+              United States of America
+            </igx-select-item>
+            <igx-select-item value="UK">
+              United Kingdom
+            </igx-select-item>
+            <label igxLabel>Nationality</label>
+          </igx-select>
+        </div>
+        <div class="column-layout name-1">
+          <h5 class="content_2">
+            Proof of Identification
+          </h5>
+          <p class="text">
+            A passport or driving license is required to verify who you are
+          </p>
+          <igx-radio-group value="1" class="user-input_1">
+            <igx-radio value="1" (click)="inputVisible2 = !inputVisible2" class="radio">
+              Passport
+            </igx-radio>
+            <igx-radio value="2" class="radio">
+              Drivers License 
+            </igx-radio>
+          </igx-radio-group>
+          <div class="row-layout group_14">
+            <igx-input-group type="border" *ngIf="inputVisible2" class="passport">
+              <input type="text" igxInput />
+              <label igxLabel>Passport Number</label>
+            </igx-input-group>
+            <igx-input-group type="border" *ngIf="inputVisible3" class="passport">
+              <input type="text" igxInput />
+              <label igxLabel>Drivers License Number</label>
+            </igx-input-group>
+            <igx-input-group type="border" class="passport">
+              <input type="text" igxInput />
+              <label igxLabel>File upload</label>
+            </igx-input-group>
+          </div>
+        </div>
+        <div class="column-layout name-1">
+          <h5 class="content_2">
+            Occupation
+          </h5>
+          <igx-input-group type="border" class="user-input">
+            <input type="text" igxInput />
+            <label igxLabel>Occupation</label>
+          </igx-input-group>
+        </div>
+      </div>
+    </div>
+  </ng-container>
+  <igx-dialog-actions>
+    <button igxButton="flat" igxRipple class="button_3">
+      Delete
+    </button>
+    <button igxButton="raised" igxRipple class="button_4">
+      Save
+    </button>
+  </igx-dialog-actions>
+</igx-dialog>

@@ -1,0 +1,116 @@
+:host {
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+}
+.column-layout {
+  display: flex;
+  flex-direction: column;
+}
+.group {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  position: relative;
+  height: 100%;
+  min-width: 50px;
+  min-height: 50px;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.row-layout {
+  display: flex;
+}
+.group_1 {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  overflow: auto;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.bottom-bar {
+  background-color: hsla(var(--ig-gray-900));
+  justify-content: flex-start;
+  align-items: center;
+  align-content: flex-start;
+  position: relative;
+  padding: 0 80px;
+  width: 100%;
+  min-width: 50px;
+  min-height: 66px;
+  max-height: min-content;
+}
+.actions {
+  justify-content: space-between;
+  align-items: center;
+  align-content: flex-start;
+  position: relative;
+  min-width: 226px;
+  min-height: 36px;
+}
+.navbar {
+  --igx-navbar-text-color: hsla(var(--ig-surface-500));
+  --igx-navbar-background: hsla(var(--ig-primary-900));
+  height: max-content;
+  min-width: min-content;
+}
+.nav-drawer {
+  min-width: min-content;
+  min-height: 0;
+  flex-shrink: 0;
+}
+.view-container {
+  overflow: auto;
+  position: relative;
+  min-width: 0;
+  min-height: 0;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.navbar-content {
+  gap: 1rem;
+}
+.button {
+  --igx-button-foreground: hsla(var(--ig-surface-500));
+}
+.button_1 {
+  --igx-button-foreground: hsla(var(--ig-secondary-500));
+  height: max-content;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.button_2 {
+  --igx-button-foreground: hsla(var(--ig-gray-900));
+  --igx-button-background: hsla(var(--ig-secondary-400));
+  height: max-content;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.button_3 {
+  height: max-content;
+}
+.h6 {
+  margin: 0;
+}
+.icon {
+  --size: 24px;
+  font-size: 24px;
+  width: 24px;
+  height: 24px;
+}
+.text {
+  color: hsla(var(--ig-surface-500));
+  width: 100%;
+  height: max-content;
+  min-width: min-content;
+}
+.text_1 {
+  height: max-content;
+  min-width: min-content;
+}

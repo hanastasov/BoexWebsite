@@ -1,0 +1,202 @@
+<div class="column-layout group">
+  <div class="row-layout group_1">
+    <h5 class="h5">
+      Account Set Up
+    </h5>
+  </div>
+  <div class="row-layout group_2">
+    <igx-card type="outlined" class="card">
+      <igx-card-header>
+        <h3 igxCardHeaderTitle>
+        </h3>
+        <h5 igxCardHeaderSubtitle>
+        </h5>
+      </igx-card-header>
+      <igx-card-content class="body-content">
+        <div class="column-layout group_3">
+          <h4 class="h4">
+            Bank Info
+          </h4>
+          <div class="column-layout name">
+            <h5 class="h5_1">
+              Bank Name
+            </h5>
+            <div class="column-layout group_4">
+              <div class="row-layout group_5">
+                <igx-input-group type="border" class="input">
+                  <input type="text" igxInput />
+                  <label igxLabel>Company Name</label>
+                </igx-input-group>
+              </div>
+            </div>
+            <div *ngIf="groupVisible11" class="row-layout group_6">
+              <button igxButton="raised" igxRipple class="button">
+                Next
+              </button>
+            </div>
+          </div>
+          <div class="column-layout name">
+            <h5 class="h5_1">
+              Bank Address
+            </h5>
+            <p class="text">
+              Often the branch address
+            </p>
+            <div class="column-layout group_4">
+              <div class="row-layout group_5">
+                <igx-input-group type="border" class="input">
+                  <input type="text" igxInput />
+                  <label igxLabel>Address</label>
+                </igx-input-group>
+              </div>
+              <div class="row-layout group_7">
+                <igx-input-group type="border" class="input_1">
+                  <input type="text" igxInput />
+                  <label igxLabel>City</label>
+                </igx-input-group>
+                <igx-input-group type="border" class="input_1">
+                  <input type="text" igxInput />
+                  <label igxLabel>State</label>
+                </igx-input-group>
+              </div>
+              <div class="row-layout group_7">
+                <igx-input-group type="border" class="input_1">
+                  <input type="text" igxInput />
+                  <label igxLabel>Country</label>
+                </igx-input-group>
+                <igx-input-group type="border" class="input_1">
+                  <input type="text" igxInput />
+                  <label igxLabel>Postal Code</label>
+                </igx-input-group>
+              </div>
+            </div>
+            <div *ngIf="groupVisible12" class="row-layout group_6">
+              <button igxButton="raised" igxRipple class="button">
+                Next
+              </button>
+            </div>
+          </div>
+          <div class="column-layout name">
+            <h5 class="h5_1">
+              Bank SWIFT/BIC Code
+            </h5>
+            <div class="column-layout group_8">
+              <igx-input-group type="border" class="input_2">
+                <input type="text" igxInput />
+                <label igxLabel>Bank SWIFT/BIC Code</label>
+              </igx-input-group>
+            </div>
+            <div *ngIf="groupVisible13" class="row-layout group_6">
+              <button igxButton="raised" igxRipple class="button">
+                Next
+              </button>
+            </div>
+          </div>
+          <div class="column-layout name">
+            <h5 class="h5_2">
+              Account Details
+            </h5>
+            <div class="column-layout group_9">
+              <div class="row-layout group_10">
+                <igx-input-group type="border" class="input_1">
+                  <input type="text" igxInput />
+                  <label igxLabel>Account Holder's Name</label>
+                  <igx-hint>As it appears on the account</igx-hint>
+                </igx-input-group>
+              </div>
+              <div class="row-layout group_10">
+                <igx-input-group type="border" class="input_1">
+                  <input type="text" igxInput />
+                  <label igxLabel>Account Number</label>
+                </igx-input-group>
+                <igx-input-group type="border" class="input_1">
+                  <input type="text" igxInput />
+                  <label igxLabel>Sort code</label>
+                </igx-input-group>
+              </div>
+              <div class="row-layout group_10">
+                <igx-input-group type="border" class="input_1">
+                  <input type="text" igxInput />
+                  <label igxLabel>IBAN</label>
+                </igx-input-group>
+                <igx-input-group type="border" class="input_1">
+                  <input type="text" igxInput />
+                  <label igxLabel>Routing number </label>
+                </igx-input-group>
+              </div>
+            </div>
+          </div>
+          <div class="column-layout name">
+            <h5 class="h5_2">
+              Correspondent Information 
+            </h5>
+            <div class="column-layout group_9">
+              <div class="row-layout group_10">
+                <igx-input-group type="border" class="input_1">
+                  <input type="text" igxInput />
+                  <label igxLabel>Correspondent Bank Name</label>
+                </igx-input-group>
+              </div>
+              <div class="column-layout group_4">
+                <div class="row-layout group_5">
+                  <igx-input-group type="border" class="input">
+                    <input type="text" igxInput />
+                    <label igxLabel>Correspondent Bank Address</label>
+                  </igx-input-group>
+                </div>
+                <div class="row-layout group_7">
+                  <igx-input-group type="border" class="input_1">
+                    <input type="text" igxInput />
+                    <label igxLabel>Correspondent Bank City</label>
+                  </igx-input-group>
+                  <igx-input-group type="border" class="input_1">
+                    <input type="text" igxInput />
+                    <label igxLabel>Correspondent Bank State</label>
+                  </igx-input-group>
+                </div>
+                <div class="row-layout group_7">
+                  <igx-input-group type="border" class="input_1">
+                    <input type="text" igxInput />
+                    <label igxLabel>Correspondent Bank Country</label>
+                  </igx-input-group>
+                  <igx-input-group type="border" class="input_1">
+                    <input type="text" igxInput />
+                    <label igxLabel>Correspondent Bank Postal Code</label>
+                  </igx-input-group>
+                </div>
+              </div>
+              <div class="row-layout group_10">
+                <igx-input-group type="border" class="input_1">
+                  <input type="text" igxInput />
+                  <label igxLabel>Correspondent Bank SWIFT/BIC Code</label>
+                </igx-input-group>
+                <igx-input-group type="border" class="input_1">
+                  <input type="text" igxInput />
+                  <label igxLabel>Correspondent Bank Account Number</label>
+                </igx-input-group>
+              </div>
+              <div class="row-layout group_10">
+                <igx-input-group type="border" class="input_1">
+                  <input type="tel" igxInput />
+                  <label igxLabel>Correspondent Phone Number</label>
+                </igx-input-group>
+                <igx-input-group type="border" class="input_1">
+                  <input type="email" igxInput />
+                  <label igxLabel>Correspondent Email</label>
+                </igx-input-group>
+              </div>
+            </div>
+          </div>
+          <div class="row-layout group_11">
+            <button igxButton="outlined" igxRipple routerLink="/account/account-setup-progress" class="button">
+              Save For Later
+            </button>
+            <button igxButton="raised" igxRipple routerLink="/account/account-setup-progress" class="button_1">
+              Save and Submit
+            </button>
+          </div>
+        </div>
+      </igx-card-content>
+    </igx-card>
+  </div>
+</div>

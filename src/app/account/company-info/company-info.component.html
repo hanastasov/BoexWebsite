@@ -1,0 +1,215 @@
+<div class="column-layout group">
+  <div class="row-layout group_1">
+    <h5 class="h5">
+      Account Set Up
+    </h5>
+  </div>
+  <div class="row-layout group_2">
+    <igx-card type="outlined" class="card">
+      <igx-card-header>
+        <h3 igxCardHeaderTitle>
+        </h3>
+        <h5 igxCardHeaderSubtitle>
+        </h5>
+      </igx-card-header>
+      <igx-card-content class="body-content">
+        <div class="column-layout group_3">
+          <h4 class="h4">
+            Company Info
+          </h4>
+          <div class="column-layout name">
+            <h5 class="h5_1">
+              Company Name
+            </h5>
+            <div class="column-layout group_4">
+              <div class="row-layout group_5">
+                <igx-input-group type="border" class="input">
+                  <input type="text" igxInput />
+                  <label igxLabel>Company Name</label>
+                </igx-input-group>
+              </div>
+            </div>
+            <div *ngIf="groupVisible" class="row-layout group_6">
+              <button igxButton="raised" igxRipple class="button">
+                Next
+              </button>
+            </div>
+          </div>
+          <div class="column-layout name">
+            <h5 class="h5_1">
+              Contact Info
+            </h5>
+            <div class="column-layout group_4">
+              <div class="row-layout group_7">
+                <igx-input-group type="border" class="input">
+                  <input type="tel" igxInput />
+                  <label igxLabel>Phone Number</label>
+                </igx-input-group>
+                <igx-input-group type="border" class="input">
+                  <input type="email" igxInput />
+                  <label igxLabel>Email address</label>
+                </igx-input-group>
+              </div>
+            </div>
+            <div *ngIf="groupVisible1" class="row-layout group_6">
+              <button igxButton="raised" igxRipple class="button">
+                Next
+              </button>
+            </div>
+          </div>
+          <div class="column-layout name">
+            <h5 class="h5_1">
+              Registered Address
+            </h5>
+            <div class="column-layout group_4">
+              <div class="row-layout group_5">
+                <igx-input-group type="border" class="input">
+                  <input type="text" igxInput />
+                  <label igxLabel>Address</label>
+                </igx-input-group>
+              </div>
+              <div class="row-layout group_8">
+                <igx-input-group type="border" class="input_1">
+                  <input type="text" igxInput />
+                  <label igxLabel>City</label>
+                </igx-input-group>
+                <igx-input-group type="border" class="input_1">
+                  <input type="text" igxInput />
+                  <label igxLabel>State</label>
+                </igx-input-group>
+              </div>
+              <div class="row-layout group_8">
+                <igx-input-group type="border" class="input_1">
+                  <input type="text" igxInput />
+                  <label igxLabel>Country</label>
+                </igx-input-group>
+                <igx-input-group type="border" class="input_1">
+                  <input type="text" igxInput />
+                  <label igxLabel>Postal Code</label>
+                </igx-input-group>
+              </div>
+            </div>
+            <div *ngIf="groupVisible2" class="row-layout group_6">
+              <button igxButton="raised" igxRipple class="button">
+                Next
+              </button>
+            </div>
+          </div>
+          <div class="column-layout name">
+            <h5 class="h5_1">
+              Proof of Address
+            </h5>
+            <p class="content">
+              Please upload a utility bill, lease agreement, or council tax statement that is no more than three months old
+            </p>
+            <div class="column-layout group_9">
+              <igx-input-group type="border" class="input_2">
+                <input type="text" placeholder="This will be a file upload not available in app builder atm" igxInput />
+                <label igxLabel>File upload</label>
+              </igx-input-group>
+            </div>
+            <div *ngIf="groupVisible3" class="row-layout group_6">
+              <button igxButton="raised" igxRipple class="button">
+                Next
+              </button>
+            </div>
+          </div>
+          <div class="column-layout name">
+            <h5 class="content">
+              Company Registration Number
+            </h5>
+            <igx-input-group type="border" class="input_3">
+              <input type="number" igxInput />
+              <label igxLabel>Company Registration Number</label>
+            </igx-input-group>
+          </div>
+          <div class="column-layout name">
+            <h5 class="content">
+              Date and Place of Incorporation
+            </h5>
+            <div class="column-layout group_10">
+              <div class="row-layout group_7">
+                <igx-date-picker type="border" mode="dialog" class="date-picker">
+                  <label igxLabel>Date of Incorporation</label>
+                </igx-date-picker>
+                <igx-input-group type="border" class="input_1">
+                  <input type="text" igxInput />
+                  <label igxLabel>City of Incorporation</label>
+                </igx-input-group>
+              </div>
+              <div class="row-layout group_7">
+                <igx-input-group type="border" class="input_1">
+                  <input type="text" igxInput />
+                  <label igxLabel>State of Incorporation</label>
+                </igx-input-group>
+                <igx-input-group type="border" class="input_1">
+                  <input type="text" igxInput />
+                  <label igxLabel>Country of Incorporation</label>
+                </igx-input-group>
+              </div>
+            </div>
+          </div>
+          <div class="column-layout name">
+            <h5 class="content">
+              Tax Information
+            </h5>
+            <p class="text">
+              Please add your UK VAT and/or Tax Identification Number if applicable registration number if applicable 
+            </p>
+            <div class="row-layout group_10">
+              <igx-input-group type="border" class="input_1">
+                <input type="text" igxInput />
+                <label igxLabel>UK VAT Registration Number</label>
+              </igx-input-group>
+              <igx-input-group type="border" class="input_1">
+                <input type="text" igxInput />
+                <label igxLabel>Tax Identification Number (TIN)</label>
+              </igx-input-group>
+            </div>
+          </div>
+          <div class="column-layout name">
+            <h5 class="content">
+              Company Incorporation Documents
+            </h5>
+            <div class="column-layout group_10">
+              <div class="row-layout group_10">
+                <igx-input-group type="border" class="input">
+                  <input type="text" placeholder="File upload" igxInput />
+                  <label igxLabel>Certificate of Incorporation</label>
+                </igx-input-group>
+                <igx-input-group type="border" class="input">
+                  <input type="text" placeholder="File upload" igxInput />
+                  <label igxLabel>Memorandum and Articles of Association</label>
+                </igx-input-group>
+              </div>
+              <div class="row-layout group_10">
+                <igx-input-group type="border" class="input">
+                  <input type="text" placeholder="File upload" igxInput />
+                  <label igxLabel>Anual Return</label>
+                </igx-input-group>
+                <igx-input-group type="border" class="input">
+                  <input type="text" placeholder="File upload" igxInput />
+                  <label igxLabel>Certificate of Incorporation</label>
+                </igx-input-group>
+              </div>
+              <div class="row-layout group_10">
+                <igx-input-group type="border" class="input">
+                  <input type="text" placeholder="File upload" igxInput />
+                  <label igxLabel>Share Registrar</label>
+                </igx-input-group>
+              </div>
+            </div>
+          </div>
+          <div class="row-layout group_11">
+            <button igxButton="outlined" igxRipple routerLink="/account/account-setup-progress" class="button">
+              Save For Later
+            </button>
+            <button igxButton="raised" igxRipple routerLink="/account/account-setup-progress" class="button_1">
+              Save and Submit
+            </button>
+          </div>
+        </div>
+      </igx-card-content>
+    </igx-card>
+  </div>
+</div>

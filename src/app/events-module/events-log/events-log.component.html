@@ -1,0 +1,24 @@
+<div class="column-layout group">
+  <igx-grid [data]="northwindProducts" primaryKey="productID" displayDensity="cosy" [moving]="true" [allowFiltering]="true" filterMode="excelStyleFilter" height="767px" class="grid">
+    <igx-grid-toolbar>
+      <igx-grid-toolbar-actions>
+        <igx-grid-toolbar-pinning></igx-grid-toolbar-pinning>
+        <igx-grid-toolbar-hiding></igx-grid-toolbar-hiding>
+        <igx-grid-toolbar-exporter></igx-grid-toolbar-exporter>
+        <igx-grid-toolbar-advanced-filtering></igx-grid-toolbar-advanced-filtering>
+      </igx-grid-toolbar-actions>
+      <igx-grid-toolbar-title>Grid Toolbar</igx-grid-toolbar-title>
+    </igx-grid-toolbar>
+    <igx-column field="productID" dataType="number" header="productID" [resizable]="true" [selectable]="false"></igx-column>
+    <igx-paginator [perPage]="10"></igx-paginator>
+    <igx-column field="supplierID" dataType="number" header="supplierID" [resizable]="true" [selectable]="false"></igx-column>
+    <igx-column field="categoryID" dataType="number" header="categoryID" [resizable]="true" [selectable]="false"></igx-column>
+    <igx-column field="quantityPerUnit" dataType="string" header="quantityPerUnit" [resizable]="true" [selectable]="false"></igx-column>
+    <igx-column field="unitPrice" dataType="number" header="unitPrice" [resizable]="true" [selectable]="false"></igx-column>
+    <igx-column field="unitsInStock" dataType="number" header="unitsInStock" [resizable]="true" [selectable]="false"></igx-column>
+    <igx-column field="unitsOnOrder" dataType="number" header="unitsOnOrder" [resizable]="true" [selectable]="false"></igx-column>
+    <igx-column field="reorderLevel" dataType="number" header="reorderLevel" [resizable]="true" [selectable]="false"></igx-column>
+    <igx-column field="discontinued" dataType="boolean" header="discontinued" [resizable]="true" [selectable]="false"></igx-column>
+    <igx-column field="name" dataType="string" header="name" [resizable]="true" [selectable]="false"></igx-column>
+  </igx-grid>
+</div>

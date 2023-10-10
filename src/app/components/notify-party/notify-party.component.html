@@ -1,0 +1,133 @@
+<div class="column-layout group">
+  <div class="row-layout group_1">
+    <div class="column-layout group_2">
+      <div class="column-layout name">
+        <h5 class="h5">
+          Name
+        </h5>
+        <div class="row-layout group_3">
+          <igx-input-group type="border" class="input">
+            <input type="text" igxInput />
+            <label igxLabel>Name</label>
+          </igx-input-group>
+        </div>
+      </div>
+      <div class="column-layout address">
+        <h5 class="h5">
+          Address
+        </h5>
+        <div class="column-layout group_3">
+          <igx-input-group type="border" class="input_1">
+            <input type="text" igxInput />
+            <label igxLabel>Address</label>
+          </igx-input-group>
+          <div class="row-layout group_4">
+            <igx-input-group type="border" class="input_2">
+              <input type="text" igxInput />
+              <label igxLabel>City</label>
+            </igx-input-group>
+            <igx-input-group type="border" class="input_2">
+              <input type="text" igxInput />
+              <label igxLabel>State</label>
+            </igx-input-group>
+          </div>
+          <div class="row-layout group_4">
+            <igx-input-group type="border" class="input_2">
+              <input type="text" igxInput />
+              <label igxLabel>Country</label>
+            </igx-input-group>
+            <igx-input-group type="border" class="input_2">
+              <input type="text" igxInput />
+              <label igxLabel>Postal Code</label>
+            </igx-input-group>
+          </div>
+        </div>
+      </div>
+      <div class="column-layout address">
+        <h5 class="h5">
+          Contact info
+        </h5>
+        <div class="column-layout group_5">
+          <igx-input-group type="border" class="input_1">
+            <input type="text" igxInput />
+            <label igxLabel>Email</label>
+          </igx-input-group>
+          <igx-input-group type="border" class="input_1">
+            <input type="text" igxInput />
+            <label igxLabel>Phone</label>
+          </igx-input-group>
+          <igx-input-group type="border" class="input_1">
+            <input type="text" igxInput />
+            <label igxLabel>Fax</label>
+          </igx-input-group>
+        </div>
+      </div>
+    </div>
+    <div class="column-layout group_6">
+      <div class="column-layout cic">
+        <h5 class="h5">
+          CIC
+        </h5>
+        <igx-input-group type="border" class="input_1">
+          <input type="text" igxInput />
+          <label igxLabel>CIC</label>
+        </igx-input-group>
+      </div>
+      <div class="column-layout notify">
+        <h5 class="h5_1">
+          Notify On
+        </h5>
+        <igx-checkbox labelPosition="after" class="user-input">
+          Email
+        </igx-checkbox>
+        <igx-checkbox labelPosition="after" class="user-input">
+          Customs Open
+        </igx-checkbox>
+        <igx-checkbox labelPosition="after" class="user-input">
+          Customs Open
+        </igx-checkbox>
+        <igx-checkbox labelPosition="after" class="user-input">
+          Customs Close 
+        </igx-checkbox>
+        <igx-checkbox labelPosition="after" class="user-input">
+          Delivery
+        </igx-checkbox>
+      </div>
+      <div class="column-layout notify">
+        <h5 class="h5_1">
+          Notify On
+        </h5>
+        <igx-checkbox labelPosition="after" class="user-input">
+          Payment Received
+        </igx-checkbox>
+        <igx-checkbox labelPosition="after" class="user-input">
+          Customs Open
+        </igx-checkbox>
+        <igx-checkbox labelPosition="after" class="user-input">
+          Customs Close 
+        </igx-checkbox>
+        <igx-checkbox labelPosition="after" class="user-input">
+          Delivery
+        </igx-checkbox>
+      </div>
+      <div class="column-layout report">
+        <h5 class="h5_1">
+          Report
+        </h5>
+        <igx-radio-group alignment="vertical" value="1" [required]="true" class="user-input">
+          <igx-radio class="radio">
+            Summary
+          </igx-radio>
+          <igx-radio class="radio">
+            Full
+          </igx-radio>
+        </igx-radio-group>
+      </div>
+    </div>
+  </div>
+  <div class="row-layout group_7">
+    <button igxButton="raised" igxRipple class="button">
+      save
+    </button>
+  </div>
+</div>

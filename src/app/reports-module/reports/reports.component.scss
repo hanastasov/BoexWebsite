@@ -1,0 +1,39 @@
+:host {
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+}
+.column-layout {
+  display: flex;
+  flex-direction: column;
+}
+.group {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  position: relative;
+  padding: 20px 30px;
+  min-width: 50px;
+  min-height: 50px;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.hyperlink {
+  color: hsla(var(--ig-info-500));
+  height: max-content;
+  min-width: min-content;
+}
+.hyperlink_1 {
+  color: hsla(var(--ig-info-500));
+  margin: 0 0 20px;
+  height: max-content;
+  min-width: min-content;
+}
+.hyperlink_2 {
+  color: hsla(var(--ig-info-500));
+  margin: 0 0 260px;
+  height: max-content;
+  min-width: min-content;
+}

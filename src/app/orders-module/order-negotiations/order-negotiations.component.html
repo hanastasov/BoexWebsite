@@ -1,0 +1,111 @@
+<div class="column-layout page-control">
+  <button igxButton="flat" igxRipple routerLink="/orders-module/order-customers" class="button">
+    SAVE
+  </button>
+</div>
+<div class="row-layout group">
+  <igx-nav-drawer [isOpen]="true" [pin]="true" [pinThreshold]="1024" width="160px" class="nav-drawer">
+    <ng-template igxDrawer>
+      <div [isHeader]="true" igxDrawerItem igxRipple routerLink="/orders-module/order-details" class="nav-drawer-item">
+        <span>DETAILS</span>
+      </div>
+      <div [isHeader]="true" igxDrawerItem igxRipple routerLink="/orders-module/order-payments">
+        <span>PAYMENTS</span>
+      </div>
+      <div [isHeader]="true" igxDrawerItem igxRipple routerLink="/orders-module/order-negotiations">
+        <span>NEGOTIATIONS</span>
+      </div>
+      <div [isHeader]="true" igxDrawerItem igxRipple routerLink="/orders-module/orders-email">
+        <span>EMAIL</span>
+      </div>
+      <div [isHeader]="true" igxDrawerItem igxRipple routerLink="/orders-module/order-log">
+        <span>BOEX LOG</span>
+      </div>
+    </ng-template>
+  </igx-nav-drawer>
+  <div class="row-layout order-negotiate">
+    <div class="column-layout group_1">
+      <igx-grid [data]="northwindOrders" primaryKey="orderID" displayDensity="cosy" [allowFiltering]="true" filterMode="excelStyleFilter" width="700px" height="361px" class="grid">
+        <igx-column field="orderID" dataType="number" header="orderID" [sortable]="true" [selectable]="false"></igx-column>
+        <igx-column field="customerID" dataType="string" header="customerID" [sortable]="true" [selectable]="false"></igx-column>
+        <igx-column field="employeeID" dataType="number" header="employeeID" [sortable]="true" [selectable]="false"></igx-column>
+        <igx-column field="orderDate" dataType="date" header="orderDate" [sortable]="true" [selectable]="false"></igx-column>
+        <igx-column field="requiredDate" dataType="date" header="requiredDate" [sortable]="true" [selectable]="false"></igx-column>
+        <igx-column field="shippedDate" dataType="date" header="shippedDate" [sortable]="true" [selectable]="false"></igx-column>
+        <igx-column field="shipVia" dataType="number" header="shipVia" [sortable]="true" [selectable]="false"></igx-column>
+        <igx-column field="freight" dataType="number" header="freight" [sortable]="true" [selectable]="false"></igx-column>
+        <igx-column field="shipName" dataType="string" header="shipName" [sortable]="true" [selectable]="false"></igx-column>
+        <igx-column field="shipAddress.street" dataType="string" header="shipAddress street" [sortable]="true" [selectable]="false"></igx-column>
+        <igx-column field="shipAddress.city" dataType="string" header="shipAddress city" [sortable]="true" [selectable]="false"></igx-column>
+        <igx-column field="shipAddress.region" dataType="string" header="shipAddress region" [sortable]="true" [selectable]="false"></igx-column>
+        <igx-column field="shipAddress.postalCode" dataType="string" header="shipAddress postalCode" [sortable]="true" [selectable]="false"></igx-column>
+        <igx-column field="shipAddress.country" dataType="string" header="shipAddress country" [sortable]="true" [selectable]="false"></igx-column>
+      </igx-grid>
+      <div class="column-layout order-serve-form">
+        <igx-input-group type="border" class="details">
+          <input type="text" igxInput />
+          <label igxLabel>Details / Description / Terms</label>
+        </igx-input-group>
+        <img src="/assets/Upload.png" class="add-documents" />
+        <igx-input-group type="border" class="details">
+          <input type="text" igxInput />
+          <label igxLabel>Interest/Exchange Rate</label>
+        </igx-input-group>
+        <igx-input-group type="border" class="details">
+          <input type="text" igxInput />
+          <label igxLabel>Interest/Exchange Rate</label>
+        </igx-input-group>
+        <igx-input-group type="border" class="details">
+          <input type="text" igxInput />
+          <label igxLabel>Interest/Exchange Rate</label>
+        </igx-input-group>
+        <button igxButton="raised" igxRipple class="button_1">
+          <igx-icon>
+            notifications
+          </igx-icon>
+          <span>CONSIGN</span>
+        </button>
+      </div>
+    </div>
+    <div class="column-layout additional-stakeholders">
+      <div class="row-layout group_2">
+        <h5 *ngIf="h5Visible" class="content">
+          Additional Stakeholders
+        </h5>
+        <p class="content">
+          Additional Stakeholders
+        </p>
+      </div>
+      <div class="row-layout group_3">
+        <igx-checkbox class="checkbox"></igx-checkbox>
+        <p class="text">
+          MIRMA
+        </p>
+      </div>
+      <div class="row-layout group_3">
+        <igx-checkbox class="checkbox"></igx-checkbox>
+        <p class="text">
+          Sustainabilty
+        </p>
+      </div>
+      <div class="row-layout group_3">
+        <igx-checkbox [checked]="true" class="checkbox"></igx-checkbox>
+        <p class="content">
+          STARR CV
+        </p>
+      </div>
+      <div class="row-layout group_3">
+        <igx-checkbox [checked]="true" class="checkbox"></igx-checkbox>
+        <p class="content">
+          Airbus IoT
+        </p>
+      </div>
+      <div class="row-layout group_3">
+        <igx-checkbox [checked]="true" class="checkbox"></igx-checkbox>
+        <p class="content">
+          WorldPay
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

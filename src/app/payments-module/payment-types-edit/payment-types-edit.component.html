@@ -1,0 +1,31 @@
+<div class="row-layout page-control">
+  <button igxButton="flat" igxRipple class="button">
+    Save Changes
+  </button>
+  <button igxButton="flat" igxRipple routerLink="/stakeholders-module/stakeholder-new" class="button">
+    New Payment Type
+  </button>
+</div>
+<igx-dialog [closeOnOutsideSelect]="true" [closeOnEscape]="true" #dialog7>
+  <igx-dialog-title>
+    <h5>
+      Confirmation
+    </h5>
+  </igx-dialog-title>
+  <ng-container>
+    <p>Add Payment Type</p>
+  </ng-container>
+  <igx-dialog-actions>
+    <button igxButton="flat" igxRipple [igxToggleAction]="dialog7">Cancel</button>
+    <button igxButton="flat" igxRipple [igxToggleAction]="dialog7">OK</button>
+  </igx-dialog-actions>
+</igx-dialog>
+<div class="row-layout main">
+  <h5 class="h5">
+    Payment Type Name
+  </h5>
+  <igx-input-group type="border" class="input">
+    <input type="text" igxInput />
+    <label igxLabel>Payment Type Name</label>
+  </igx-input-group>
+</div>
